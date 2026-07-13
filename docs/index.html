@@ -47,8 +47,9 @@
   .barra{background:var(--branco);border-bottom:1px solid var(--linha);
          position:sticky;top:0;z-index:20;box-shadow:0 1px 2px rgba(16,32,48,.04)}
   .filtros{padding:10px 24px;max-width:1400px;margin:0 auto;
-        display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}
-  .linha-topo{display:flex;gap:10px;align-items:center}
+        display:grid;grid-template-columns:minmax(230px,300px) 1fr auto;gap:10px;align-items:center}
+  .linha-topo{display:flex;gap:10px;align-items:center;min-width:0}
+  .linha-topo input[type=search]{width:100%}
   .campos{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
   input[type=search],select{font:inherit;font-size:13.5px;padding:9px 11px;border:1px solid var(--linha);
         border-radius:8px;background:#fff;color:var(--tinta);outline:none;min-width:130px;min-height:40px}
