@@ -1,7 +1,7 @@
 {
  "resumo": {
-  "atualizado_em": "13/07/2026 às 13:10",
-  "atualizado_iso": "2026-07-13T13:10:23.499682-03:00",
+  "atualizado_em": "13/07/2026 às 13:19",
+  "atualizado_iso": "2026-07-13T13:19:36.808004-03:00",
   "total": 161,
   "total_pr": 716,
   "municipios": [
@@ -2941,8 +2941,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787712957700",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771295770021.jpg",
    "pagina": "imovel/8787712957700.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787712957700.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -2964,8 +2964,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715863944",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771586394421.jpg",
    "pagina": "imovel/8787715863944.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715863944.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -2987,8 +2987,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444422964744",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442296474421.jpg",
    "pagina": "imovel/8444422964744.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444422964744.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3010,8 +3010,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703103958",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770310395821.jpg",
    "pagina": "imovel/8787703103958.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703103958.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3033,8 +3033,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715235463",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771523546321.jpg",
    "pagina": "imovel/8787715235463.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715235463.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3054,11 +3054,11 @@
    "descricao": "Terreno, 0.00 de área total, 0.00 de área privativa, 3328.92 de área do terreno.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444422825932",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442282593222.jpg",
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442282593221.jpg",
    "pagina": "imovel/1444422825932.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444422825932.pdf",
-   "n_fotos": 2
+   "matricula": "",
+   "n_fotos": 1
   },
   {
    "numero": "1444422580050",
@@ -3079,8 +3079,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444422580050",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442258005021.jpg",
    "pagina": "imovel/1444422580050.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444422580050.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3102,8 +3102,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715190850",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771519085021.jpg",
    "pagina": "imovel/8787715190850.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715190850.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3125,8 +3125,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787716620441",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771662044121.jpg",
    "pagina": "imovel/8787716620441.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787716620441.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
