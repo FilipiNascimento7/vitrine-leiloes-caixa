@@ -12,8 +12,18 @@
 body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:var(--fundo);
  color:var(--tinta);line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:var(--azul)}
-header{background:linear-gradient(135deg,var(--azul),var(--azul-esc));color:#fff;padding:18px 24px}
+header{background:linear-gradient(135deg,var(--azul),var(--azul-esc));color:#fff;padding:16px 24px 18px}
 .wrap{max-width:1180px;margin:0 auto}
+.nav-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:14px;margin-bottom:14px;
+ border-bottom:1px solid rgba(255,255,255,.18)}
+.nav-topo .logo{height:40px;width:auto;background:#fff;border-radius:8px;padding:4px 7px;flex:none}
+.assinatura{font-size:12px;line-height:1.35;opacity:.9}
+.assinatura b{display:block;font-size:13.5px;font-weight:700;opacity:1}
+.nav-topo .links{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.nav-topo .links a{color:#fff;text-decoration:none;font-size:13.5px;font-weight:600;padding:9px 13px;
+ border-radius:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);min-height:40px;
+ display:flex;align-items:center}
+.nav-topo .links a:hover{background:rgba(255,255,255,.24)}
 .voltar{display:inline-block;color:#fff;text-decoration:none;font-size:13.5px;opacity:.9;margin-bottom:10px}
 .voltar:hover{opacity:1}
 header h1{font-size:23px;font-weight:700;letter-spacing:-.3px}
@@ -92,9 +102,17 @@ dd{font-weight:600;word-break:break-word}
  .lupa-seta.esq{left:4px} .lupa-seta.dir{right:4px}
 }
 footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-top:1px solid var(--linha)}
+footer b{color:var(--tinta)}
+.rodape-logo{height:38px;width:auto;display:block;margin:0 auto 10px;opacity:.95}
 @media(max-width:900px){main{grid-template-columns:1fr;padding:16px 14px 50px;gap:0}}
 @media(max-width:760px){
- header{padding:14px 14px 12px}
+ header{padding:12px 14px}
+ .nav-topo{gap:9px;padding-bottom:11px;margin-bottom:11px}
+ .nav-topo .logo{height:32px}
+ .assinatura{font-size:10.5px}
+ .assinatura b{font-size:12px}
+ .nav-topo .links{margin-left:0;width:100%;gap:5px}
+ .nav-topo .links a{flex:1;justify-content:center;font-size:12px;padding:9px 4px}
  header h1{font-size:19px}
  header .end{font-size:12.5px}
  .tag{font-size:10.5px;padding:3px 8px}
@@ -114,6 +132,15 @@ footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-t
 
 <header>
   <div class="wrap">
+    <nav class="nav-topo">
+      <img class="logo" src="../img/logo-auxiliadora.png" alt="Auxiliadora Predial — Agência Hugo Lange">
+      <div class="assinatura"><b>Auxiliadora Predial</b>Agência Hugo Lange · Curitiba</div>
+      <div class="links">
+        <a href="../index.html">Imóveis</a>
+        <a href="../modalidades.html">Modalidades</a>
+        <a href="../duvidas.html">Dúvidas</a>
+      </div>
+    </nav>
     <a class="voltar" href="../index.html">&larr; Voltar para a vitrine</a>
     <h1>Apartamento em Bom Jesus</h1>
     <div class="end">RODOVIA DOS EXPEDICIONARIOS,N. 1145 APTO. 2644 BL 26, TP 2, , BOM JESUS - CEP: 83604-360, CAMPO LARGO - PARANA</div>
@@ -168,8 +195,12 @@ footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-t
 </div>
 
 <footer>
-  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 13/07/2026 às 15:31.<br>
-  Vitrine informativa — confira sempre o site oficial antes de qualquer proposta.
+  <img class="rodape-logo" src="../img/logo-auxiliadora.png" alt="Auxiliadora Predial — Agência Hugo Lange">
+  <b>Auxiliadora Predial — Agência Hugo Lange</b> · Curitiba/PR<br>
+  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 13/07/2026 às 16:00.<br>
+  Não somos a Caixa: as propostas e os lances são feitos no site oficial.
+  <a href="../modalidades.html">Entenda as modalidades</a> ·
+  <a href="../duvidas.html">Dúvidas frequentes</a>
 </footer>
 
 <script>
