@@ -93,14 +93,19 @@ MUNICIPIOS_NORM = {normalizar(m): m for m in MUNICIPIOS}
 
 
 def para_float(valor: str):
-    """'123.456,78' / 'R$ 1.200,00' -> 123456.78"""
+    """Aceita os dois formatos que a Caixa mistura no mesmo CSV:
+    '1.356.159,46' (br) e '68.18' (ponto decimal, usado na coluna Desconto)."""
     if valor is None:
         return None
     t = re.sub(r"[^\d,.\-]", "", str(valor))
     if not t:
         return None
-    # formato brasileiro: ponto = milhar, vírgula = decimal
-    t = t.replace(".", "").replace(",", ".")
+    if "," in t:                       # vírgula presente => br: ponto é milhar
+        t = t.replace(".", "").replace(",", ".")
+    elif t.count(".") == 1 and len(t.split(".")[1]) <= 2:
+        pass                           # ex.: "68.18" => já é decimal
+    else:
+        t = t.replace(".", "")         # ex.: "1.356.159" => milhar
     try:
         return float(t)
     except ValueError:
@@ -274,16 +279,21 @@ def coletar():
         avaliacao = para_float(campo(linha, "avaliacao"))
         desconto = para_float(campo(linha, "desconto"))
 
-        # desconto real, recalculado (a coluna da Caixa às vezes vem vazia)
-        if (desconto in (None, 0)) and preco and avaliacao and avaliacao > 0:
-            desconto = round((1 - preco / avaliacao) * 100, 2)
+        # desconto real: recalcula quando vier vazio, zerado ou fora de faixa
+        if (desconto is None or desconto <= 0 or desconto > 100) and preco and avaliacao and avaliacao > 0:
+            desconto = round(max(0.0, (1 - preco / avaliacao) * 100), 2)
 
         descricao = campo(linha, "descricao")
         link = campo(linha, "link")
 
-        # id interno usado nas URLs da Caixa (hdnimovel) — serve para a foto
+        # foto: padrão do portal é F + número preenchido com zeros até 13 dígitos + "21.jpg"
+        # ex.: imóvel 10139954 -> F000001013995421.jpg
         m = re.search(r"hdnimovel=(\d+)", link)
         hdn = m.group(1) if m else re.sub(r"\D", "", numero)
+        foto = (
+            f"https://venda-imoveis.caixa.gov.br/fotos/F{hdn.zfill(13)}21.jpg"
+            if hdn else ""
+        )
 
         imoveis.append(
             {
@@ -305,7 +315,7 @@ def coletar():
                 "descricao": descricao,
                 "modalidade": modalidade,
                 "link": link,
-                "foto": f"https://venda-imoveis.caixa.gov.br/fotos/F{hdn}21.jpg" if hdn else "",
+                "foto": foto,
             }
         )
 
@@ -337,11 +347,22 @@ def classificar_tipo(descricao: str) -> str:
 
 
 def extrair_area(descricao: str):
+    """A Caixa lista várias áreas ('0.00 de área total, 72600.00 de área do terreno').
+    Preferimos privativa > total > terreno, ignorando zeros."""
     d = normalizar(descricao)
-    m = re.search(r"([\d.,]+)\s*(?:m2|m²|de area privativa|de area total)", d)
-    if m:
-        return para_float(m.group(1))
-    return None
+    achados = {}
+    for valor, rotulo in re.findall(
+        r"([\d.,]+)\s*(?:m2\s*)?de area (privativa|total|do terreno|util)", d
+    ):
+        v = para_float(valor)
+        if v and v > 0 and rotulo not in achados:
+            achados[rotulo] = v
+    for rotulo in ("privativa", "util", "total", "do terreno"):
+        if rotulo in achados:
+            return achados[rotulo]
+    m = re.search(r"([\d.,]+)\s*(?:m2|m²)", d)
+    v = para_float(m.group(1)) if m else None
+    return v if (v and v > 0) else None
 
 
 def extrair_quartos(descricao: str):
