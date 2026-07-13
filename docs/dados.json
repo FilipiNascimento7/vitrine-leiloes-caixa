@@ -1,7 +1,7 @@
 {
  "resumo": {
-  "atualizado_em": "13/07/2026 às 09:35",
-  "atualizado_iso": "2026-07-13T09:35:05.568394-03:00",
+  "atualizado_em": "13/07/2026 às 12:35",
+  "atualizado_iso": "2026-07-13T12:35:52.295317-03:00",
   "total": 161,
   "total_pr": 716,
   "municipios": [
@@ -41,7 +41,11 @@
    "descricao": "Gleba, 0.00 de área total, 0.00 de área privativa, 72600.00 de área do terreno.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=10139954",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001013995421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001013995421.jpg",
+   "pagina": "imovel/10139954.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/0000010139954.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "10011968",
@@ -60,7 +64,11 @@
    "descricao": "Comercial, 0.00 de área total, 2890.80 de área privativa, 3960.00 de área do terreno.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=10011968",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001001196821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001001196821.jpg",
+   "pagina": "imovel/10011968.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/0000010011968.pdf",
+   "n_fotos": 2
   },
   {
    "numero": "8444419331060",
@@ -79,7 +87,11 @@
    "descricao": "Apartamento, 0.00 de área total, 61.60 de área privativa, 0.00 de área do terreno,  2 qto(s), varanda, a.serv, WC, 1 sala(s), 1 lavabo(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444419331060",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844441933106021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844441933106021.jpg",
+   "pagina": "imovel/8444419331060.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444419331060.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787706961580",
@@ -98,7 +110,11 @@
    "descricao": "Apartamento, 0.00 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787706961580",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770696158021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770696158021.jpg",
+   "pagina": "imovel/8787706961580.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787706961580.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704108538",
@@ -117,7 +133,11 @@
    "descricao": "Apartamento, 45.90 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704108538",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770410853821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770410853821.jpg",
+   "pagina": "imovel/8787704108538.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704108538.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705420250",
@@ -136,7 +156,11 @@
    "descricao": "Apartamento, 101.65 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705420250",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770542025021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770542025021.jpg",
+   "pagina": "imovel/8787705420250.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705420250.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705008413",
@@ -155,7 +179,11 @@
    "descricao": "Apartamento, 0.00 de área total, 47.15 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705008413",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770500841321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770500841321.jpg",
+   "pagina": "imovel/8787705008413.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705008413.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703998130",
@@ -174,7 +202,11 @@
    "descricao": "Apartamento, 40.31 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703998130",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770399813021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770399813021.jpg",
+   "pagina": "imovel/8787703998130.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703998130.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703714736",
@@ -193,7 +225,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703714736",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770371473621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770371473621.jpg",
+   "pagina": "imovel/8787703714736.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703714736.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555516351888",
@@ -212,7 +248,11 @@
    "descricao": "Apartamento, 0.00 de área total, 42.27 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555516351888",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551635188821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551635188821.jpg",
+   "pagina": "imovel/8555516351888.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555516351888.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787708753594",
@@ -231,7 +271,11 @@
    "descricao": "Apartamento, 43.37 de área total, 41.54 de área privativa, 0.00 de área do terreno,  2 qto(s), 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787708753594",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770875359421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770875359421.jpg",
+   "pagina": "imovel/8787708753594.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787708753594.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703152487",
@@ -250,7 +294,11 @@
    "descricao": "Apartamento, 0.00 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703152487",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770315248721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770315248721.jpg",
+   "pagina": "imovel/8787703152487.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703152487.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444418135747",
@@ -269,7 +317,11 @@
    "descricao": "Apartamento, 0.00 de área total, 50.17 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444418135747",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844441813574721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844441813574721.jpg",
+   "pagina": "imovel/8444418135747.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444418135747.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444421418659",
@@ -288,7 +340,11 @@
    "descricao": "Casa, 433.88 de área total, 433.88 de área privativa, 780.00 de área do terreno,  5 qto(s), a.serv, WC, 4 sala(s), 1 lavabo(s), cozinha.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444421418659",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442141865921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442141865921.jpg",
+   "pagina": "imovel/1444421418659.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444421418659.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444407507011",
@@ -307,7 +363,11 @@
    "descricao": "Casa, 0.00 de área total, 86.93 de área privativa, 177.08 de área do terreno,  3 qto(s), WC, 2 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444407507011",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144440750701121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144440750701121.jpg",
+   "pagina": "imovel/1444407507011.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444407507011.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444433866030",
@@ -326,7 +386,11 @@
    "descricao": "Apartamento, 49.30 de área total, 42.57 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444433866030",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844443386603021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844443386603021.jpg",
+   "pagina": "imovel/8444433866030.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444433866030.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787708379374",
@@ -345,7 +409,11 @@
    "descricao": "Apartamento, 54.62 de área total, 41.54 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787708379374",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770837937421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770837937421.jpg",
+   "pagina": "imovel/8787708379374.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787708379374.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787709302057",
@@ -364,7 +432,11 @@
    "descricao": "Apartamento, 43.37 de área total, 41.54 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787709302057",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770930205721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770930205721.jpg",
+   "pagina": "imovel/8787709302057.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787709302057.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787708373384",
@@ -383,7 +455,11 @@
    "descricao": "Apartamento, 54.62 de área total, 41.54 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787708373384",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770837338421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770837338421.jpg",
+   "pagina": "imovel/8787708373384.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787708373384.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555528701382",
@@ -402,7 +478,11 @@
    "descricao": "Apartamento, 45.00 de área total, 43.12 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555528701382",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855552870138221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855552870138221.jpg",
+   "pagina": "imovel/8555528701382.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555528701382.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555533721264",
@@ -421,7 +501,11 @@
    "descricao": "Apartamento, 40.52 de área total, 37.80 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, Terraco, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555533721264",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553372126421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553372126421.jpg",
+   "pagina": "imovel/8555533721264.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555533721264.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787711689621",
@@ -440,7 +524,11 @@
    "descricao": "Apartamento, 42.28 de área total, 41.70 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787711689621",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771168962121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771168962121.jpg",
+   "pagina": "imovel/8787711689621.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787711689621.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787701930377",
@@ -459,7 +547,11 @@
    "descricao": "Apartamento, 50.03 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787701930377",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770193037721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770193037721.jpg",
+   "pagina": "imovel/8787701930377.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787701930377.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702314505",
@@ -478,7 +570,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702314505",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770231450521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770231450521.jpg",
+   "pagina": "imovel/8787702314505.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702314505.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702327518",
@@ -497,7 +593,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702327518",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770232751821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770232751821.jpg",
+   "pagina": "imovel/8787702327518.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702327518.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702406663",
@@ -516,7 +616,11 @@
    "descricao": "Apartamento, 4019.21 de área total, 40.13 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702406663",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770240666321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770240666321.jpg",
+   "pagina": "imovel/8787702406663.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702406663.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702413406",
@@ -535,7 +639,11 @@
    "descricao": "Apartamento, 45.92 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702413406",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770241340621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770241340621.jpg",
+   "pagina": "imovel/8787702413406.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702413406.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702492527",
@@ -554,7 +662,11 @@
    "descricao": "Apartamento, 52.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702492527",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770249252721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770249252721.jpg",
+   "pagina": "imovel/8787702492527.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702492527.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702551558",
@@ -573,7 +685,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702551558",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770255155821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770255155821.jpg",
+   "pagina": "imovel/8787702551558.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702551558.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702693310",
@@ -592,7 +708,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702693310",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770269331021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770269331021.jpg",
+   "pagina": "imovel/8787702693310.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702693310.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702831976",
@@ -611,7 +731,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702831976",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770283197621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770283197621.jpg",
+   "pagina": "imovel/8787702831976.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702831976.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703271915",
@@ -630,7 +754,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703271915",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770327191521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770327191521.jpg",
+   "pagina": "imovel/8787703271915.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703271915.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703275635",
@@ -649,7 +777,11 @@
    "descricao": "Apartamento, 52.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), varanda, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703275635",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770327563521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770327563521.jpg",
+   "pagina": "imovel/8787703275635.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703275635.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703305208",
@@ -668,7 +800,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703305208",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770330520821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770330520821.jpg",
+   "pagina": "imovel/8787703305208.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703305208.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703484536",
@@ -687,7 +823,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703484536",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770348453621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770348453621.jpg",
+   "pagina": "imovel/8787703484536.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00190326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703484536.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703539160",
@@ -706,7 +846,11 @@
    "descricao": "Apartamento, 46.26 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 2 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703539160",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770353916021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770353916021.jpg",
+   "pagina": "imovel/8787703539160.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703539160.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703661217",
@@ -725,7 +869,11 @@
    "descricao": "Apartamento, 0.00 de área total, 52.31 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703661217",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770366121721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770366121721.jpg",
+   "pagina": "imovel/8787703661217.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703661217.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703670038",
@@ -744,7 +892,11 @@
    "descricao": "Apartamento, 50.03 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703670038",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770367003821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770367003821.jpg",
+   "pagina": "imovel/8787703670038.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703670038.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787706657300",
@@ -763,7 +915,11 @@
    "descricao": "Apartamento, 52.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787706657300",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770665730021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770665730021.jpg",
+   "pagina": "imovel/8787706657300.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787706657300.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787706692334",
@@ -782,7 +938,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787706692334",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770669233421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770669233421.jpg",
+   "pagina": "imovel/8787706692334.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787706692334.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710716757",
@@ -801,7 +961,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710716757",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771071675721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771071675721.jpg",
+   "pagina": "imovel/8787710716757.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710716757.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444428790721",
@@ -820,7 +984,11 @@
    "descricao": "Apartamento, 44.90 de área total, 40.10 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444428790721",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442879072121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442879072121.jpg",
+   "pagina": "imovel/8444428790721.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444428790721.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704480631",
@@ -839,7 +1007,11 @@
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704480631",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770448063121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770448063121.jpg",
+   "pagina": "imovel/8787704480631.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704480631.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704497119",
@@ -858,7 +1030,11 @@
    "descricao": "Apartamento, 50.08 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704497119",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449711921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449711921.jpg",
+   "pagina": "imovel/8787704497119.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704497119.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704497666",
@@ -877,7 +1053,11 @@
    "descricao": "Apartamento, 47.38 de área total, 41.51 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704497666",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449766621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449766621.jpg",
+   "pagina": "imovel/8787704497666.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704497666.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704497801",
@@ -896,7 +1076,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704497801",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449780121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449780121.jpg",
+   "pagina": "imovel/8787704497801.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704497801.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704800784",
@@ -915,7 +1099,11 @@
    "descricao": "Apartamento, 102.33 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704800784",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770480078421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770480078421.jpg",
+   "pagina": "imovel/8787704800784.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704800784.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704962300",
@@ -934,7 +1122,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704962300",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770496230021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770496230021.jpg",
+   "pagina": "imovel/8787704962300.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704962300.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705007468",
@@ -953,7 +1145,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705007468",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770500746821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770500746821.jpg",
+   "pagina": "imovel/8787705007468.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705007468.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705163931",
@@ -972,7 +1168,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705163931",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770516393121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770516393121.jpg",
+   "pagina": "imovel/8787705163931.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705163931.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705172213",
@@ -991,7 +1191,11 @@
    "descricao": "Apartamento, 58.32 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705172213",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770517221321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770517221321.jpg",
+   "pagina": "imovel/8787705172213.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705172213.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705192680",
@@ -1010,7 +1214,11 @@
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705192680",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770519268021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770519268021.jpg",
+   "pagina": "imovel/8787705192680.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705192680.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705273168",
@@ -1029,7 +1237,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705273168",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770527316821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770527316821.jpg",
+   "pagina": "imovel/8787705273168.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705273168.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705286154",
@@ -1048,7 +1260,11 @@
    "descricao": "Apartamento, 46.20 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, Terraco, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705286154",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770528615421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770528615421.jpg",
+   "pagina": "imovel/8787705286154.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705286154.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705371763",
@@ -1067,7 +1283,11 @@
    "descricao": "Apartamento, 47.59 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705371763",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770537176321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770537176321.jpg",
+   "pagina": "imovel/8787705371763.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705371763.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705411382",
@@ -1086,7 +1306,11 @@
    "descricao": "Apartamento, 0.00 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705411382",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770541138221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770541138221.jpg",
+   "pagina": "imovel/8787705411382.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705411382.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705470630",
@@ -1105,7 +1329,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705470630",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770547063021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770547063021.jpg",
+   "pagina": "imovel/8787705470630.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705470630.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787706024617",
@@ -1124,7 +1352,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787706024617",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770602461721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770602461721.jpg",
+   "pagina": "imovel/8787706024617.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787706024617.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787709582823",
@@ -1143,7 +1375,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787709582823",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770958282321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770958282321.jpg",
+   "pagina": "imovel/8787709582823.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787709582823.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787709839662",
@@ -1162,7 +1398,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787709839662",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770983966221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770983966221.jpg",
+   "pagina": "imovel/8787709839662.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787709839662.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710470111",
@@ -1181,7 +1421,11 @@
    "descricao": "Apartamento, 46.20 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710470111",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771047011121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771047011121.jpg",
+   "pagina": "imovel/8787710470111.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710470111.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710517002",
@@ -1200,7 +1444,11 @@
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710517002",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771051700221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771051700221.jpg",
+   "pagina": "imovel/8787710517002.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710517002.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710659753",
@@ -1219,7 +1467,11 @@
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710659753",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771065975321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771065975321.jpg",
+   "pagina": "imovel/8787710659753.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710659753.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710915423",
@@ -1238,7 +1490,11 @@
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710915423",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771091542321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771091542321.jpg",
+   "pagina": "imovel/8787710915423.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710915423.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703697718",
@@ -1257,7 +1513,11 @@
    "descricao": "Apartamento, 637.60 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703697718",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770369771821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770369771821.jpg",
+   "pagina": "imovel/8787703697718.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703697718.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703952092",
@@ -1276,7 +1536,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703952092",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770395209221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770395209221.jpg",
+   "pagina": "imovel/8787703952092.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703952092.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705586328",
@@ -1295,7 +1559,11 @@
    "descricao": "Apartamento, 46.34 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705586328",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770558632821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770558632821.jpg",
+   "pagina": "imovel/8787705586328.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705586328.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555536055583",
@@ -1314,7 +1582,11 @@
    "descricao": "Apartamento, 49.88 de área total, 43.51 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555536055583",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553605558321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553605558321.jpg",
+   "pagina": "imovel/8555536055583.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555536055583.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787714493566",
@@ -1333,7 +1605,11 @@
    "descricao": "Apartamento, 58.30 de área total, 49.84 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787714493566",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771449356621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771449356621.jpg",
+   "pagina": "imovel/8787714493566.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787714493566.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555512847072",
@@ -1352,7 +1628,11 @@
    "descricao": "Casa, 0.00 de área total, 35.10 de área privativa, 155.49 de área do terreno,  1 qto(s), WC, 1 sala(s), cozinha.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555512847072",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551284707221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551284707221.jpg",
+   "pagina": "imovel/8555512847072.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555512847072.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555515362061",
@@ -1371,7 +1651,11 @@
    "descricao": "Casa, 47.30 de área total, 47.30 de área privativa, 127.91 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555515362061",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551536206121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551536206121.jpg",
+   "pagina": "imovel/8555515362061.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555515362061.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787715025965",
@@ -1390,7 +1674,11 @@
    "descricao": "Apartamento, 101.20 de área total, 38.68 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715025965",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771502596521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771502596521.jpg",
+   "pagina": "imovel/8787715025965.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715025965.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702208306",
@@ -1409,7 +1697,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702208306",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770220830621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770220830621.jpg",
+   "pagina": "imovel/8787702208306.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702208306.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787707492428",
@@ -1428,7 +1720,11 @@
    "descricao": "Apartamento, 42.12 de área total, 40.32 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787707492428",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770749242821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770749242821.jpg",
+   "pagina": "imovel/8787707492428.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787707492428.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787713103853",
@@ -1447,7 +1743,11 @@
    "descricao": "Apartamento, 58.17 de área total, 41.11 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787713103853",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771310385321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771310385321.jpg",
+   "pagina": "imovel/8787713103853.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787713103853.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787714502816",
@@ -1466,7 +1766,11 @@
    "descricao": "Apartamento, 45.67 de área total, 41.11 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787714502816",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771450281621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771450281621.jpg",
+   "pagina": "imovel/8787714502816.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787714502816.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787711125159",
@@ -1485,7 +1789,11 @@
    "descricao": "Apartamento, 50.16 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, Terraco, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787711125159",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771112515921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771112515921.jpg",
+   "pagina": "imovel/8787711125159.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787711125159.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703438488",
@@ -1504,7 +1812,11 @@
    "descricao": "Apartamento, 45.49 de área total, 38.40 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703438488",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770343848821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770343848821.jpg",
+   "pagina": "imovel/8787703438488.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703438488.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555532121042",
@@ -1523,7 +1835,11 @@
    "descricao": "Apartamento, 44.57 de área total, 41.70 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555532121042",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553212104221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553212104221.jpg",
+   "pagina": "imovel/8555532121042.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555532121042.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787701698989",
@@ -1542,7 +1858,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787701698989",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770169898921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770169898921.jpg",
+   "pagina": "imovel/8787701698989.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787701698989.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787701904252",
@@ -1561,7 +1881,11 @@
    "descricao": "Apartamento, 50.04 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787701904252",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770190425221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770190425221.jpg",
+   "pagina": "imovel/8787701904252.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787701904252.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702328662",
@@ -1580,7 +1904,11 @@
    "descricao": "Apartamento, 62.82 de área total, 44.83 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702328662",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770232866221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770232866221.jpg",
+   "pagina": "imovel/8787702328662.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702328662.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703061902",
@@ -1599,7 +1927,11 @@
    "descricao": "Apartamento, 46.26 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703061902",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770306190221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770306190221.jpg",
+   "pagina": "imovel/8787703061902.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703061902.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703300125",
@@ -1618,7 +1950,11 @@
    "descricao": "Apartamento, 50.04 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703300125",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770330012521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770330012521.jpg",
+   "pagina": "imovel/8787703300125.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703300125.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703620065",
@@ -1637,7 +1973,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703620065",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770362006521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770362006521.jpg",
+   "pagina": "imovel/8787703620065.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703620065.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704032140",
@@ -1656,7 +1996,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704032140",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770403214021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770403214021.jpg",
+   "pagina": "imovel/8787704032140.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704032140.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705513541",
@@ -1675,7 +2019,11 @@
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705513541",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770551354121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770551354121.jpg",
+   "pagina": "imovel/8787705513541.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705513541.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705920686",
@@ -1694,7 +2042,11 @@
    "descricao": "Apartamento, 57.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705920686",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770592068621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770592068621.jpg",
+   "pagina": "imovel/8787705920686.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705920686.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787708326874",
@@ -1713,7 +2065,11 @@
    "descricao": "Apartamento, 51.84 de área total, 47.09 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787708326874",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770832687421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770832687421.jpg",
+   "pagina": "imovel/8787708326874.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00190326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787708326874.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444433965534",
@@ -1732,7 +2088,11 @@
    "descricao": "Apartamento, 58.32 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444433965534",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844443396553421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844443396553421.jpg",
+   "pagina": "imovel/8444433965534.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444433965534.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704497623",
@@ -1751,7 +2111,11 @@
    "descricao": "Apartamento, 65.96 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, Terraco, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704497623",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449762321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770449762321.jpg",
+   "pagina": "imovel/8787704497623.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704497623.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704512177",
@@ -1770,7 +2134,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704512177",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770451217721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770451217721.jpg",
+   "pagina": "imovel/8787704512177.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704512177.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704848876",
@@ -1789,7 +2157,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704848876",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770484887621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770484887621.jpg",
+   "pagina": "imovel/8787704848876.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704848876.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704880206",
@@ -1808,7 +2180,11 @@
    "descricao": "Apartamento, 58.67 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704880206",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770488020621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770488020621.jpg",
+   "pagina": "imovel/8787704880206.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704880206.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704882381",
@@ -1827,7 +2203,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704882381",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770488238121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770488238121.jpg",
+   "pagina": "imovel/8787704882381.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704882381.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704947556",
@@ -1846,7 +2226,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704947556",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770494755621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770494755621.jpg",
+   "pagina": "imovel/8787704947556.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704947556.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787704995690",
@@ -1865,7 +2249,11 @@
    "descricao": "Apartamento, 46.18 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704995690",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770499569021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770499569021.jpg",
+   "pagina": "imovel/8787704995690.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787704995690.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705182766",
@@ -1884,7 +2272,11 @@
    "descricao": "Apartamento, 63.22 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705182766",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770518276621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770518276621.jpg",
+   "pagina": "imovel/8787705182766.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705182766.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705222474",
@@ -1903,7 +2295,11 @@
    "descricao": "Apartamento, 58.67 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705222474",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770522247421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770522247421.jpg",
+   "pagina": "imovel/8787705222474.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705222474.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705231058",
@@ -1922,7 +2318,11 @@
    "descricao": "Apartamento, 58.67 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705231058",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770523105821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770523105821.jpg",
+   "pagina": "imovel/8787705231058.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705231058.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705242742",
@@ -1941,7 +2341,11 @@
    "descricao": "Apartamento, 67.68 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, Terraco, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705242742",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770524274221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770524274221.jpg",
+   "pagina": "imovel/8787705242742.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705242742.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705253957",
@@ -1960,7 +2364,11 @@
    "descricao": "Apartamento, 46.20 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705253957",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770525395721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770525395721.jpg",
+   "pagina": "imovel/8787705253957.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705253957.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705273699",
@@ -1979,7 +2387,11 @@
    "descricao": "Apartamento, 49.94 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705273699",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770527369921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770527369921.jpg",
+   "pagina": "imovel/8787705273699.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705273699.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705326180",
@@ -1998,7 +2410,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705326180",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770532618021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770532618021.jpg",
+   "pagina": "imovel/8787705326180.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705326180.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705391900",
@@ -2017,7 +2433,11 @@
    "descricao": "Apartamento, 63.23 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, Terraco, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705391900",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770539190021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770539190021.jpg",
+   "pagina": "imovel/8787705391900.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705391900.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705475852",
@@ -2036,7 +2456,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705475852",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770547585221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770547585221.jpg",
+   "pagina": "imovel/8787705475852.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705475852.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705477146",
@@ -2055,7 +2479,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705477146",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770547714621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770547714621.jpg",
+   "pagina": "imovel/8787705477146.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705477146.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705624556",
@@ -2074,7 +2502,11 @@
    "descricao": "Apartamento, 40.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705624556",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770562455621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770562455621.jpg",
+   "pagina": "imovel/8787705624556.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705624556.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705639308",
@@ -2093,7 +2525,11 @@
    "descricao": "Apartamento, 40.31 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705639308",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770563930821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770563930821.jpg",
+   "pagina": "imovel/8787705639308.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705639308.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705647980",
@@ -2112,7 +2548,11 @@
    "descricao": "Apartamento, 0.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705647980",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770564798021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770564798021.jpg",
+   "pagina": "imovel/8787705647980.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705647980.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705691571",
@@ -2131,7 +2571,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705691571",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770569157121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770569157121.jpg",
+   "pagina": "imovel/8787705691571.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705691571.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705717481",
@@ -2150,7 +2594,11 @@
    "descricao": "Apartamento, 49.94 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705717481",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770571748121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770571748121.jpg",
+   "pagina": "imovel/8787705717481.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705717481.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705962249",
@@ -2169,7 +2617,11 @@
    "descricao": "Apartamento, 58.32 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705962249",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770596224921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770596224921.jpg",
+   "pagina": "imovel/8787705962249.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705962249.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710324760",
@@ -2188,7 +2640,11 @@
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710324760",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771032476021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771032476021.jpg",
+   "pagina": "imovel/8787710324760.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710324760.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710357293",
@@ -2207,7 +2663,11 @@
    "descricao": "Apartamento, 58.36 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710357293",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771035729321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771035729321.jpg",
+   "pagina": "imovel/8787710357293.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710357293.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710694770",
@@ -2226,7 +2686,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710694770",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771069477021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771069477021.jpg",
+   "pagina": "imovel/8787710694770.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710694770.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702149954",
@@ -2245,7 +2709,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702149954",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770214995421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770214995421.jpg",
+   "pagina": "imovel/8787702149954.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702149954.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787702847805",
@@ -2264,7 +2732,11 @@
    "descricao": "Apartamento, 56.90 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702847805",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770284780521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770284780521.jpg",
+   "pagina": "imovel/8787702847805.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702847805.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703188899",
@@ -2283,7 +2755,11 @@
    "descricao": "Apartamento, 50.04 de área total, 43.61 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703188899",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770318889921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770318889921.jpg",
+   "pagina": "imovel/8787703188899.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703188899.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703202964",
@@ -2302,7 +2778,11 @@
    "descricao": "Apartamento, 46.27 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703202964",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770320296421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770320296421.jpg",
+   "pagina": "imovel/8787703202964.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703202964.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787709676569",
@@ -2321,7 +2801,11 @@
    "descricao": "Apartamento, 45.82 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787709676569",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770967656921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770967656921.jpg",
+   "pagina": "imovel/8787709676569.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787709676569.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787700995319",
@@ -2340,7 +2824,11 @@
    "descricao": "Apartamento, 52.25 de área total, 43.54 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787700995319",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770099531921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770099531921.jpg",
+   "pagina": "imovel/8787700995319.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787700995319.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787710407215",
@@ -2359,7 +2847,11 @@
    "descricao": "Apartamento, 58.42 de área total, 49.94 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710407215",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771040721521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771040721521.jpg",
+   "pagina": "imovel/8787710407215.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710407215.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444404798498",
@@ -2378,7 +2870,11 @@
    "descricao": "Casa, 0.00 de área total, 51.43 de área privativa, 0.00 de área do terreno,  3 qto(s), 1 sala(s), cozinha.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444404798498",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440479849821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440479849821.jpg",
+   "pagina": "imovel/8444404798498.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444404798498.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444406189855",
@@ -2397,7 +2893,11 @@
    "descricao": "Casa, 43.65 de área total, 43.65 de área privativa, 71.60 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444406189855",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440618985521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440618985521.jpg",
+   "pagina": "imovel/8444406189855.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444406189855.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787705100042",
@@ -2416,7 +2916,11 @@
    "descricao": "Apartamento, 58.45 de área total, 52.86 de área privativa, 0.00 de área do terreno,  3 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705100042",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770510004221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770510004221.jpg",
+   "pagina": "imovel/8787705100042.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705100042.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787712957700",
@@ -2435,7 +2939,11 @@
    "descricao": "Apartamento, 45.38 de área total, 38.40 de área privativa, 0.00 de área do terreno,  2 qto(s), 1 sala(s), 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787712957700",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771295770021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771295770021.jpg",
+   "pagina": "imovel/8787712957700.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787712957700.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787715863944",
@@ -2454,7 +2962,11 @@
    "descricao": "Apartamento, 45.38 de área total, 38.40 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715863944",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771586394421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771586394421.jpg",
+   "pagina": "imovel/8787715863944.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715863944.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444422964744",
@@ -2473,7 +2985,11 @@
    "descricao": "Apartamento, 0.00 de área total, 57.99 de área privativa, 0.00 de área do terreno,  2 qto(s), varanda, a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444422964744",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442296474421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442296474421.jpg",
+   "pagina": "imovel/8444422964744.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444422964744.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787703103958",
@@ -2492,7 +3008,11 @@
    "descricao": "Apartamento, 51.50 de área total, 38.40 de área privativa, 0.00 de área do terreno,  1 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703103958",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770310395821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770310395821.jpg",
+   "pagina": "imovel/8787703103958.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703103958.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787715235463",
@@ -2511,7 +3031,11 @@
    "descricao": "Apartamento, 76.21 de área total, 38.40 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715235463",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771523546321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771523546321.jpg",
+   "pagina": "imovel/8787715235463.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715235463.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444422825932",
@@ -2530,7 +3054,11 @@
    "descricao": "Terreno, 0.00 de área total, 0.00 de área privativa, 3328.92 de área do terreno.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444422825932",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442282593221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442282593222.jpg",
+   "pagina": "imovel/1444422825932.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444422825932.pdf",
+   "n_fotos": 2
   },
   {
    "numero": "1444422580050",
@@ -2549,7 +3077,11 @@
    "descricao": "Apartamento, 40.02 de área total, 36.40 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444422580050",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442258005021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442258005021.jpg",
+   "pagina": "imovel/1444422580050.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444422580050.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787715190850",
@@ -2568,7 +3100,11 @@
    "descricao": "Apartamento, 52.70 de área total, 46.68 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715190850",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771519085021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771519085021.jpg",
+   "pagina": "imovel/8787715190850.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715190850.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787716620441",
@@ -2587,7 +3123,11 @@
    "descricao": "Apartamento, 72.39 de área total, 61.95 de área privativa, 0.00 de área do terreno,  2 qto(s), varanda, a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787716620441",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771662044121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771662044121.jpg",
+   "pagina": "imovel/8787716620441.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787716620441.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787715858002",
@@ -2606,7 +3146,11 @@
    "descricao": "Apartamento, 49.15 de área total, 41.60 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715858002",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771585800221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771585800221.jpg",
+   "pagina": "imovel/8787715858002.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715858002.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444430740965",
@@ -2625,7 +3169,11 @@
    "descricao": "Apartamento, 59.43 de área total, 48.13 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444430740965",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844443074096521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844443074096521.jpg",
+   "pagina": "imovel/8444430740965.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444430740965.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787712390409",
@@ -2644,7 +3192,11 @@
    "descricao": "Casa, 42.00 de área total, 42.00 de área privativa, 78.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787712390409",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771239040921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771239040921.jpg",
+   "pagina": "imovel/8787712390409.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787712390409.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787714019724",
@@ -2663,7 +3215,11 @@
    "descricao": "Casa, 42.00 de área total, 42.00 de área privativa, 78.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787714019724",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771401972421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771401972421.jpg",
+   "pagina": "imovel/8787714019724.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787714019724.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787714335693",
@@ -2682,7 +3238,11 @@
    "descricao": "Casa, 42.00 de área total, 42.00 de área privativa, 78.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787714335693",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771433569321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771433569321.jpg",
+   "pagina": "imovel/8787714335693.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787714335693.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787716737225",
@@ -2701,7 +3261,11 @@
    "descricao": "Casa, 0.00 de área total, 42.00 de área privativa, 78.00 de área do terreno.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787716737225",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771673722521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771673722521.jpg",
+   "pagina": "imovel/8787716737225.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787716737225.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787718250838",
@@ -2720,7 +3284,11 @@
    "descricao": "Apartamento, 60.55 de área total, 55.26 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787718250838",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771825083821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771825083821.jpg",
+   "pagina": "imovel/8787718250838.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787718250838.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555532572478",
@@ -2739,7 +3307,11 @@
    "descricao": "Apartamento, 60.24 de área total, 52.60 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555532572478",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553257247821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553257247821.jpg",
+   "pagina": "imovel/8555532572478.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555532572478.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444417159547",
@@ -2758,7 +3330,11 @@
    "descricao": "Casa, 39.77 de área total, 38.60 de área privativa, 108.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444417159547",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441715954721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441715954721.jpg",
+   "pagina": "imovel/1444417159547.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444417159547.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1787700557135",
@@ -2777,7 +3353,11 @@
    "descricao": "Apartamento, 45.88 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1787700557135",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F178770055713521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F178770055713521.jpg",
+   "pagina": "imovel/1787700557135.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1787700557135.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555518325604",
@@ -2796,7 +3376,11 @@
    "descricao": "Casa, 50.10 de área total, 50.10 de área privativa, 69.70 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555518325604",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551832560421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551832560421.jpg",
+   "pagina": "imovel/8555518325604.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00190326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555518325604.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8787701955078",
@@ -2815,7 +3399,11 @@
    "descricao": "Apartamento, 0.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787701955078",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770195507821.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770195507821.jpg",
+   "pagina": "imovel/8787701955078.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787701955078.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444414235560",
@@ -2834,7 +3422,11 @@
    "descricao": "Apartamento, 63.98 de área total, 55.06 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444414235560",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441423556021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441423556021.jpg",
+   "pagina": "imovel/1444414235560.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444414235560.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555518647563",
@@ -2853,7 +3445,11 @@
    "descricao": "Apartamento, 44.95 de área total, 40.01 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555518647563",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551864756321.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551864756321.jpg",
+   "pagina": "imovel/8555518647563.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00190326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555518647563.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444423636724",
@@ -2872,7 +3468,11 @@
    "descricao": "Apartamento, 49.30 de área total, 42.57 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444423636724",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442363672421.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442363672421.jpg",
+   "pagina": "imovel/8444423636724.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444423636724.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444424287210",
@@ -2891,7 +3491,11 @@
    "descricao": "Apartamento, 0.00 de área total, 53.29 de área privativa, 0.00 de área do terreno,  2 qto(s), varanda, a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444424287210",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442428721021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144442428721021.jpg",
+   "pagina": "imovel/1444424287210.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444424287210.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8555533967557",
@@ -2910,7 +3514,11 @@
    "descricao": "Apartamento, 62.64 de área total, 54.99 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555533967557",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553396755721.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855553396755721.jpg",
+   "pagina": "imovel/8555533967557.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555533967557.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "10284141",
@@ -2929,7 +3537,11 @@
    "descricao": "Casa, 0.00 de área total, 547.75 de área privativa, 1468.00 de área do terreno,  5 qto(s), varanda, a.serv, WC, WC Emp, 2 sala(s), 1 lavabo(s), cozinha, Terraco.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=10284141",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001028414121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001028414121.jpg",
+   "pagina": "imovel/10284141.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/0000010284141.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444407173466",
@@ -2948,7 +3560,11 @@
    "descricao": "Casa, 90.99 de área total, 90.99 de área privativa, 74.81 de área do terreno,  3 qto(s), a.serv, WC, 1 sala(s), 1 lavabo(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444407173466",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144440717346621.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144440717346621.jpg",
+   "pagina": "imovel/1444407173466.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444407173466.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1065020080212",
@@ -2967,7 +3583,11 @@
    "descricao": "Apartamento, 98.25 de área total, 87.59 de área privativa, 0.00 de área do terreno,  3 qto(s), a.serv, WC, WC Emp, 1 sala(s), DCE, cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1065020080212",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F106502008021221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F106502008021221.jpg",
+   "pagina": "imovel/1065020080212.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00180326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1065020080212.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444404619259",
@@ -2986,7 +3606,11 @@
    "descricao": "Apartamento, 59.70 de área total, 59.70 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444404619259",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440461925921.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440461925921.jpg",
+   "pagina": "imovel/8444404619259.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444404619259.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1555528553075",
@@ -3005,7 +3629,11 @@
    "descricao": "Casa, 410.32 de área total, 410.32 de área privativa, 528.00 de área do terreno,  3 qto(s), a.serv, WC, 4 sala(s), cozinha.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1555528553075",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F155552855307521.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F155552855307521.jpg",
+   "pagina": "imovel/1555528553075.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1555528553075.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444418870180",
@@ -3024,7 +3652,11 @@
    "descricao": "Casa, 138.91 de área total, 51.72 de área privativa, 194.79 de área do terreno,  4 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
    "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444418870180",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441887018021.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441887018021.jpg",
+   "pagina": "imovel/1444418870180.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444418870180.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "10286302",
@@ -3043,7 +3675,11 @@
    "descricao": "Casa, 0.00 de área total, 70.07 de área privativa, 207.66 de área do terreno.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=10286302",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001028630221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001028630221.jpg",
+   "pagina": "imovel/10286302.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/0000010286302.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "1444418887481",
@@ -3062,7 +3698,11 @@
    "descricao": "Terreno, 0.00 de área total, 0.00 de área privativa, 480.00 de área do terreno.",
    "modalidade": "Venda Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444418887481",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441888748121.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441888748121.jpg",
+   "pagina": "imovel/1444418887481.html",
+   "edital": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444418887481.pdf",
+   "n_fotos": 1
   },
   {
    "numero": "8444423249372",
@@ -3081,7 +3721,11 @@
    "descricao": "Casa, 0.00 de área total, 60.00 de área privativa, 120.00 de área do terreno,  3 qto(s), a.serv, WC, 1 sala(s), cozinha.",
    "modalidade": "Licitação Aberta",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444423249372",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442324937221.jpg"
+   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442324937221.jpg",
+   "pagina": "imovel/8444423249372.html",
+   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444423249372.pdf",
+   "n_fotos": 1
   }
  ]
 }
