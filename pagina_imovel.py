@@ -95,9 +95,26 @@ dd{font-weight:600;word-break:break-word}
 .btn.discreto:hover{color:var(--azul)}
 .nota{font-size:12px;color:var(--cinza);margin-top:12px;line-height:1.5}
 
-#lupa{position:fixed;inset:0;background:rgba(10,18,28,.92);display:none;align-items:center;
- justify-content:center;z-index:99;cursor:zoom-out;padding:30px}
-#lupa img{max-width:100%;max-height:100%;border-radius:8px}
+#lupa{position:fixed;inset:0;background:rgba(10,18,28,.94);display:none;align-items:center;
+ justify-content:center;z-index:99;padding:70px 80px}
+#lupa.on{display:flex}
+#lupa img{max-width:100%;max-height:100%;border-radius:8px;background:#fff}
+.lupa-btn{position:absolute;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+ color:#fff;cursor:pointer;border-radius:10px;display:flex;align-items:center;justify-content:center;
+ font-family:inherit;transition:background .15s}
+.lupa-btn:hover{background:rgba(255,255,255,.28)}
+.lupa-seta{top:50%;transform:translateY(-50%);width:52px;height:64px;font-size:26px;font-weight:700}
+.lupa-seta.esq{left:14px}
+.lupa-seta.dir{right:14px}
+.lupa-seta[disabled]{opacity:.25;cursor:default}
+.lupa-fechar{top:16px;right:16px;height:42px;padding:0 16px;gap:8px;font-size:13.5px;font-weight:700}
+.lupa-conta{position:absolute;top:22px;left:50%;transform:translateX(-50%);color:#fff;
+ font-size:13px;opacity:.75;letter-spacing:.4px}
+@media(max-width:700px){
+ #lupa{padding:64px 10px}
+ .lupa-seta{width:40px;height:52px;font-size:20px}
+ .lupa-seta.esq{left:4px} .lupa-seta.dir{right:4px}
+}
 footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-top:1px solid var(--linha)}
 @media(max-width:900px){main{grid-template-columns:1fr}}
 """
@@ -151,15 +168,17 @@ def gerar(im: dict, atualizado: str) -> str:
 
     if fotos:
         principal = (f'<img class="principal" src="{_e(fotos[0])}" alt="Foto do imóvel" '
-                     f'onclick="ampliar(this.src)">')
+                     f'onclick="abrirFoto(0)">')
         mini = "".join(
-            f'<img src="{_e(f)}" alt="Foto do imóvel" loading="lazy" onclick="ampliar(this.src)">'
-            for f in fotos[1:]
+            f'<img src="{_e(f)}" alt="Foto do imóvel" loading="lazy" onclick="abrirFoto({n})">'
+            for n, f in enumerate(fotos[1:], start=1)
         )
         galeria = f'<div class="galeria">{mini}</div>' if mini else ""
     else:
         principal = '<div class="semfoto">sem foto cadastrada pela Caixa</div>'
         galeria = ""
+
+    fotos_js = ",".join('"' + f.replace('"', "") + '"' for f in fotos)
 
     ordem = ["Tipo de imóvel", "Número do imóvel", "Matrícula(s)", "Comarca", "Ofício",
              "Inscrição imobiliária", "Averbação dos leilões negativos",
@@ -196,8 +215,6 @@ def gerar(im: dict, atualizado: str) -> str:
     if d.get("matricula"):
         botoes.append(f'<a class="btn linha" href="{_e(d["matricula"])}" target="_blank" '
                       f'rel="noopener">Baixar matrícula do imóvel</a>')
-    botoes.append(f'<a class="btn discreto" href="{_e(im["link"])}" target="_blank" '
-                  f'rel="noopener">Ver anúncio original no site da Caixa</a>')
 
     aval = (f'<div class="aval"><span>Avaliação Caixa</span><b>{_brl(im["avaliacao"])}</b></div>'
             if im.get("avaliacao") and desconto > 0 else "")
@@ -261,7 +278,13 @@ def gerar(im: dict, atualizado: str) -> str:
   </div>
 </main>
 
-<div id="lupa" onclick="this.style.display='none'"><img id="lupa-img" alt=""></div>
+<div id="lupa" onclick="if(event.target===this) fecharFoto()">
+  <span class="lupa-conta" id="lupa-conta"></span>
+  <button class="lupa-btn lupa-fechar" onclick="fecharFoto()">&times; Voltar ao anúncio</button>
+  <button class="lupa-btn lupa-seta esq" id="lupa-ant" onclick="passarFoto(-1)">&#10094;</button>
+  <img id="lupa-img" alt="Foto do imóvel">
+  <button class="lupa-btn lupa-seta dir" id="lupa-prox" onclick="passarFoto(1)">&#10095;</button>
+</div>
 
 <footer>
   Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em {_e(atualizado)}.<br>
@@ -269,12 +292,37 @@ def gerar(im: dict, atualizado: str) -> str:
 </footer>
 
 <script>
-function ampliar(src){{
-  document.getElementById('lupa-img').src = src;
-  document.getElementById('lupa').style.display = 'flex';
+const FOTOS = [{fotos_js}];
+let atual = 0;
+
+function abrirFoto(i){{
+  atual = i;
+  mostrarFoto();
+  document.getElementById('lupa').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}}
+function fecharFoto(){{
+  document.getElementById('lupa').classList.remove('on');
+  document.body.style.overflow = '';
+}}
+function passarFoto(passo){{
+  const novo = atual + passo;
+  if (novo < 0 || novo >= FOTOS.length) return;
+  atual = novo;
+  mostrarFoto();
+}}
+function mostrarFoto(){{
+  document.getElementById('lupa-img').src = FOTOS[atual];
+  document.getElementById('lupa-conta').textContent =
+    (atual + 1) + ' de ' + FOTOS.length;
+  document.getElementById('lupa-ant').disabled  = (atual === 0);
+  document.getElementById('lupa-prox').disabled = (atual === FOTOS.length - 1);
 }}
 document.addEventListener('keydown', function(e){{
-  if (e.key === 'Escape') document.getElementById('lupa').style.display = 'none';
+  if (!document.getElementById('lupa').classList.contains('on')) return;
+  if (e.key === 'Escape') fecharFoto();
+  if (e.key === 'ArrowLeft') passarFoto(-1);
+  if (e.key === 'ArrowRight') passarFoto(1);
 }});
 </script>
 </body>
