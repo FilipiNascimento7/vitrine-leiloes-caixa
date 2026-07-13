@@ -449,6 +449,10 @@ def enriquecer(imoveis, sessao):
             im["detalhe"] = det
             if det["fotos"]:
                 im["foto"] = det["fotos"][0]
+            # o tipo oficial da Caixa vale mais que o palpite feito pela descrição
+            tipo_caixa = det["campos"].get("Tipo de imóvel", "").strip()
+            if tipo_caixa:
+                im["tipo"] = tipo_caixa.title()
             im["pagina"] = f"imovel/{im['numero']}.html"
             ok += 1
         except Exception as e:
