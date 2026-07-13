@@ -130,17 +130,20 @@ def _baixar_via_requests() -> str:
     return resp.content.decode("latin-1")
 
 
-def _baixar_via_navegador() -> str:
+class SessaoCaixa:
     """A Caixa bloqueia IPs de datacenter com desafio JS (Radware Bot Manager).
-    Um navegador real resolve o desafio; depois buscamos o CSV com os cookies dele."""
-    from playwright.sync_api import sync_playwright
+    Abrimos um Chromium real, deixamos o desafio rodar e reaproveitamos a mesma
+    sessão para baixar o CSV e depois visitar as páginas de detalhe."""
 
-    with sync_playwright() as p:
-        nav = p.chromium.launch(
+    def __enter__(self):
+        from playwright.sync_api import sync_playwright
+
+        self._pw = sync_playwright().start()
+        self.nav = self._pw.chromium.launch(
             headless=True,
             args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
         )
-        ctx = nav.new_context(
+        ctx = self.nav.new_context(
             user_agent=UA,
             locale="pt-BR",
             timezone_id="America/Sao_Paulo",
@@ -149,17 +152,25 @@ def _baixar_via_navegador() -> str:
         ctx.add_init_script(
             "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
         )
-        pg = ctx.new_page()
-        pg.goto(PAGINA_BUSCA, wait_until="domcontentloaded", timeout=90_000)
-
-        # dá tempo do desafio JS rodar e gravar os cookies
-        for _ in range(6):
-            pg.wait_for_timeout(3000)
-            if not _parece_bloqueio(pg.content()[:2000]) or "busca" in pg.url:
+        self.pg = ctx.new_page()
+        self.pg.goto(PAGINA_BUSCA, wait_until="domcontentloaded", timeout=90_000)
+        for _ in range(6):                      # espera o desafio JS gravar cookies
+            self.pg.wait_for_timeout(3000)
+            if not _parece_bloqueio(self.pg.content()[:2000]):
                 break
+        return self
 
-        # busca o CSV de dentro da própria página (mesma origem, cookies válidos)
-        b64 = pg.evaluate(
+    def __exit__(self, *exc):
+        try:
+            self.nav.close()
+            self._pw.stop()
+        except Exception:
+            pass
+
+    def baixar_csv(self) -> str:
+        import base64
+
+        b64 = self.pg.evaluate(
             """async (url) => {
                 const r = await fetch(url, {credentials: 'include'});
                 const buf = new Uint8Array(await r.arrayBuffer());
@@ -169,24 +180,53 @@ def _baixar_via_navegador() -> str:
             }""",
             CSV_URL,
         )
-        nav.close()
+        return base64.b64decode(b64).decode("latin-1")
 
-    import base64
-    return base64.b64decode(b64).decode("latin-1")
+    def detalhe(self, link: str) -> dict:
+        """Lê a página de detalhe do imóvel e devolve texto + PDFs + galeria."""
+        self.pg.goto(link, wait_until="domcontentloaded", timeout=60_000)
+        self.pg.wait_for_timeout(400)
+        return self.pg.evaluate(
+            """() => {
+                const box = document.querySelector('.content-wrapper.clearfix');
+                const texto = box ? box.innerText : '';
+                const doc = (re) => {
+                    for (const a of document.querySelectorAll('a')) {
+                        const oc = a.getAttribute('onclick') || '';
+                        const m = oc.match(/ExibeDoc\\('([^']+)'\\)/);
+                        if (m && re.test(a.textContent)) return m[1];
+                    }
+                    return '';
+                };
+                const fotos = [...new Set(
+                    [...document.querySelectorAll('img')]
+                      .map(i => i.src)
+                      .filter(s => /\\/fotos\\/F\\d+\\.jpg/i.test(s))
+                )];
+                return {
+                    texto,
+                    edital:    doc(/edital/i),
+                    matricula: doc(/matr/i),
+                    fotos,
+                };
+            }"""
+        )
 
 
-def baixar_csv() -> str:
+def baixar_csv(sessao=None) -> str:
     print(f"Baixando {CSV_URL} ...")
     try:
         texto = _baixar_via_requests()
         if not _parece_bloqueio(texto):
             print(f"  ok — {len(texto)/1024:.0f} KB (requisição direta)")
             return texto
-        print("  bloqueado por desafio anti-bot — tentando via navegador…")
+        print("  bloqueado por desafio anti-bot — usando o navegador…")
     except Exception as e:
-        print(f"  requisição direta falhou ({e}) — tentando via navegador…")
+        print(f"  requisição direta falhou ({e}) — usando o navegador…")
 
-    texto = _baixar_via_navegador()
+    if sessao is None:
+        raise RuntimeError("Sem sessão de navegador para contornar o anti-bot.")
+    texto = sessao.baixar_csv()
     if _parece_bloqueio(texto):
         raise RuntimeError(
             "A Caixa devolveu uma página de desafio anti-bot mesmo pelo navegador."
@@ -222,8 +262,8 @@ def achar_coluna(cabecalho, *palavras):
 # ----------------------------------------------------------------------------
 
 
-def coletar():
-    bruto = baixar_csv()
+def coletar(sessao=None):
+    bruto = baixar_csv(sessao)
     linhas = [l for l in bruto.splitlines() if l.strip(";").strip()]
     idx_cab = achar_cabecalho(linhas)
 
@@ -323,6 +363,104 @@ def coletar():
     return imoveis, total_pr, modalidades_vistas
 
 
+# ----------------------------------------------------------------------------
+# DETALHES (uma visita por imóvel na página oficial)
+# ----------------------------------------------------------------------------
+
+BASE = "https://venda-imoveis.caixa.gov.br"
+
+# blocos de texto livre que a Caixa exibe na página de detalhe
+BLOCOS = [
+    ("descricao_completa", "Descrição:"),
+    ("formas_pagamento", "FORMAS DE PAGAMENTO ACEITAS:"),
+    ("regras_despesas", "REGRAS PARA PAGAMENTO DAS DESPESAS"),
+]
+
+
+def parsear_detalhe(texto: str) -> dict:
+    """Transforma o texto da página de detalhe em campos + blocos."""
+    # a ficha (pares "Chave: valor") só existe antes do bloco "Descrição:" — depois
+    # dele vêm textos livres que também têm dois-pontos e não são campos.
+    corte = texto.find("Descrição:")
+    cabeca = texto[:corte] if corte > 0 else texto
+
+    linhas = [l.strip() for l in cabeca.splitlines() if l.strip()]
+    campos, areas = {}, {}
+    endereco_completo = ""
+
+    for i, l in enumerate(linhas):
+        # "Área privativa = 2.890,80m2"
+        m = re.match(r"^(Área[^=]+)=\s*([\d.,]+)\s*m2?$", l, re.I)
+        if m:
+            areas[m.group(1).strip()] = m.group(2).strip() + " m²"
+            continue
+        # "Chave: valor"
+        m = re.match(r"^([A-Za-zÀ-ú()\s/º°.-]{3,45}?):\s*(.+)$", l)
+        if m and not l.upper().startswith(("FORMAS", "REGRAS", "DESCRIÇÃO")):
+            chave, valor = m.group(1).strip(), m.group(2).strip()
+            if chave.lower() == "endereço":
+                continue
+            campos.setdefault(chave, valor)
+            continue
+        if l.lower().startswith("endereço"):
+            endereco_completo = linhas[i + 1] if i + 1 < len(linhas) else ""
+        if re.search(r"data d[ao] (licitação|leilão|venda)", l, re.I):
+            campos.setdefault("Data da disputa", l.lstrip("• ").strip())
+
+    # blocos de texto livre — do rótulo até o próximo rótulo conhecido
+    rotulos = [r for _, r in BLOCOS] + ["Baixar", "Voltar", "Dê seu lance"]
+    blocos = {}
+    for chave, rotulo in BLOCOS:
+        m = re.search(re.escape(rotulo) + r"[^\n]*\n", texto)
+        if not m:
+            continue
+        resto = texto[m.end():]
+        fim = len(resto)
+        for r in rotulos:
+            if r == rotulo:
+                continue
+            p = resto.find(r)
+            if 0 <= p < fim:
+                fim = p
+        bruto_bloco = resto[:fim].strip()
+        conteudo = "".join(c if (c.isprintable() or c == chr(10)) else " " for c in bruto_bloco)
+        if conteudo:
+            blocos[chave] = [x.strip(" •·\t") for x in conteudo.splitlines() if x.strip()]
+
+    return {
+        "campos": campos,
+        "areas": areas,
+        "blocos": blocos,
+        "endereco_completo": endereco_completo,
+    }
+
+
+def enriquecer(imoveis, sessao):
+    """Visita a página oficial de cada imóvel e guarda TUDO que a Caixa mostra."""
+    print(f"\nColetando os detalhes de {len(imoveis)} imóveis (página por página)…")
+    ok = falhas = 0
+    for n, im in enumerate(imoveis, 1):
+        try:
+            d = sessao.detalhe(im["link"])
+            det = parsear_detalhe(d.get("texto", ""))
+            det["fotos"] = d.get("fotos") or ([im["foto"]] if im["foto"] else [])
+            det["edital"] = (BASE + d["edital"]) if d.get("edital") else ""
+            det["matricula"] = (BASE + d["matricula"]) if d.get("matricula") else ""
+            im["detalhe"] = det
+            if det["fotos"]:
+                im["foto"] = det["fotos"][0]
+            im["pagina"] = f"imovel/{im['numero']}.html"
+            ok += 1
+        except Exception as e:
+            falhas += 1
+            im["detalhe"] = None
+            im["pagina"] = ""
+            print(f"  ! falhou no imóvel {im['numero']}: {e}")
+        if n % 25 == 0 or n == len(imoveis):
+            print(f"  {n}/{len(imoveis)}…")
+    print(f"  detalhes coletados: {ok} ok, {falhas} falhas")
+
+
 def classificar_tipo(descricao: str) -> str:
     d = normalizar(descricao)
     for chave, rotulo in [
@@ -393,15 +531,29 @@ def gravar(imoveis, total_pr, modalidades_vistas):
         ),
     }
 
-    # 1) JSON (vitrine online)
+    # 1) páginas de detalhe (uma por imóvel, com galeria e PDFs)
+    import pagina_imovel
+    pagina_imovel.gravar_todas(imoveis, resumo["atualizado_em"], SAIDA)
+
+    # o dados.json da vitrine fica enxuto: o detalhe pesado vive na página do imóvel
+    leves = []
+    for im in imoveis:
+        det = im.get("detalhe") or {}
+        leve = {k: v for k, v in im.items() if k != "detalhe"}
+        leve["edital"] = det.get("edital", "")
+        leve["matricula"] = det.get("matricula", "")
+        leve["n_fotos"] = len(det.get("fotos") or [])
+        leves.append(leve)
+
     with open(os.path.join(SAIDA, "dados.json"), "w", encoding="utf-8") as f:
-        json.dump({"resumo": resumo, "imoveis": imoveis}, f, ensure_ascii=False, indent=1)
+        json.dump({"resumo": resumo, "imoveis": leves}, f, ensure_ascii=False, indent=1)
+    imoveis = leves
 
     # 2) CSV (Excel-friendly)
     campos = [
         "numero", "cidade", "bairro", "endereco", "tipo", "area", "quartos",
         "preco", "avaliacao", "desconto", "economia", "modalidade",
-        "aceita_financiamento", "aceita_fgts", "link", "descricao",
+        "aceita_financiamento", "aceita_fgts", "link", "edital", "matricula", "descricao",
     ]
     with open(os.path.join(SAIDA, "imoveis.csv"), "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campos, delimiter=";", extrasaction="ignore")
@@ -456,7 +608,8 @@ def gravar_xlsx(imoveis, resumo, campos):
         "quartos": "Quartos", "preco": "Preço (R$)", "avaliacao": "Avaliação (R$)",
         "desconto": "Desconto (%)", "economia": "Economia (R$)",
         "modalidade": "Modalidade", "aceita_financiamento": "Financia?",
-        "aceita_fgts": "FGTS?", "link": "Link Caixa", "descricao": "Descrição",
+        "aceita_fgts": "FGTS?", "link": "Link Caixa", "edital": "Edital (PDF)",
+        "matricula": "Matrícula (PDF)", "descricao": "Descrição",
     }
 
     ws.append([titulos[c] for c in campos])
@@ -504,7 +657,10 @@ def gravar_xlsx(imoveis, resumo, campos):
 
 if __name__ == "__main__":
     try:
-        imoveis, total_pr, mods = coletar()
+        with SessaoCaixa() as sessao:
+            imoveis, total_pr, mods = coletar(sessao)
+            if imoveis:
+                enriquecer(imoveis, sessao)
     except Exception as e:
         print(f"\nERRO: {e}\n", file=sys.stderr)
         sys.exit(1)

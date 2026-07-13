@@ -53,7 +53,7 @@
   .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--sombra);
         display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
   .card:hover{transform:translateY(-3px);box-shadow:0 4px 12px rgba(16,32,48,.1),0 16px 40px rgba(16,32,48,.1)}
-  .foto{position:relative;aspect-ratio:4/3;background:#E8ECF1;overflow:hidden}
+  .foto{position:relative;aspect-ratio:4/3;background:#E8ECF1;overflow:hidden;display:block}
   .foto img{width:100%;height:100%;object-fit:cover;display:block}
   .foto .semfoto{width:100%;height:100%;display:flex;align-items:center;justify-content:center;
         color:#A6B0BC;font-size:13px;background:repeating-linear-gradient(45deg,#EDF0F4,#EDF0F4 10px,#E8ECF1 10px,#E8ECF1 20px)}
@@ -77,6 +77,11 @@
   .cta{display:block;margin-top:11px;text-align:center;background:var(--laranja);color:#fff;
        font-size:13.5px;font-weight:700;padding:9px;border-radius:8px;text-decoration:none}
   .cta:hover{background:#DB8300}
+  .cta2{display:block;margin-top:7px;text-align:center;background:#fff;border:1.5px solid var(--linha);
+       color:var(--cinza);font-size:12.5px;font-weight:600;padding:7px;border-radius:8px;text-decoration:none}
+  .cta2:hover{border-color:var(--azul);color:var(--azul)}
+  .conta-fotos{position:absolute;bottom:10px;right:10px;background:rgba(10,18,28,.72);color:#fff;
+       font-size:11px;font-weight:600;padding:3px 8px;border-radius:5px}
 
   /* ---------- tabela ---------- */
   .tabela-wrap{background:#fff;border-radius:12px;box-shadow:var(--sombra);overflow:auto;max-height:76vh}
@@ -195,6 +200,8 @@ const COLUNAS = [
   {k:'economia',    t:'Economia',    f:BRL, num:true},
   {k:'modalidade',  t:'Modalidade',  f:v=>v},
   {k:'endereco',    t:'Endereço',    f:v=>v, end:true},
+  {k:'pagina',      t:'Detalhes',    f:(v,i)=> v ? `<a href="${v}">ver ficha</a>` : '—'},
+  {k:'edital',      t:'Edital',      f:v=> v ? `<a href="${v}" target="_blank" rel="noopener">PDF ↗</a>` : '—'},
   {k:'link',        t:'Caixa',       f:v=>`<a href="${v}" target="_blank" rel="noopener">abrir ↗</a>`},
 ];
 
@@ -299,14 +306,17 @@ function renderCards(){
       i.aceita_financiamento ? '<span class="chip ok">Financia</span>' : '',
       i.aceita_fgts          ? '<span class="chip ok">FGTS</span>' : '',
     ].join('');
+    const destino = i.pagina || i.link;
+    const alvo    = i.pagina ? '' : 'target="_blank" rel="noopener"';
     return `
     <article class="card">
-      <div class="foto">
+      <a class="foto" href="${destino}" ${alvo}>
         <img src="${i.foto}" alt="${i.tipo} em ${i.bairro}, ${i.cidade}" loading="lazy"
-             onerror="this.outerHTML='<div class=\\'semfoto\\'>sem foto disponível</div>'">
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'semfoto',textContent:'sem foto disponível'}))">
         <span class="selo${d>0?'':' zero'}">${d>0 ? PCT(d)+' OFF' : 'sem desconto'}</span>
         <span class="modal-tag">${i.modalidade}</span>
-      </div>
+        ${i.n_fotos > 1 ? `<span class="conta-fotos">📷 ${i.n_fotos}</span>` : ''}
+      </a>
       <div class="corpo">
         <div class="tipo">${i.tipo}</div>
         <div class="local">${i.bairro || i.cidade}${i.bairro ? ' · ' + i.cidade : ''}</div>
@@ -315,7 +325,8 @@ function renderCards(){
         <div class="precos">
           ${i.avaliacao && d > 0 ? `<div class="aval">Avaliação ${BRL(i.avaliacao)}</div>` : ''}
           <div class="preco">${BRL(i.preco)}</div>
-          <a class="cta" href="${i.link}" target="_blank" rel="noopener">Ver no site da Caixa</a>
+          <a class="cta" href="${destino}" ${alvo}>Ver ficha completa</a>
+          ${i.edital ? `<a class="cta2" href="${i.edital}" target="_blank" rel="noopener">📄 Edital</a>` : ''}
         </div>
       </div>
     </article>`;
