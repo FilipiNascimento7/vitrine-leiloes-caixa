@@ -28,7 +28,9 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependências
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
 
       - name: Coletar imóveis da Caixa
         run: python build.py

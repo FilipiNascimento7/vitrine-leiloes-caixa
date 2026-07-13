@@ -107,29 +107,87 @@ def para_float(valor: str):
         return None
 
 
+UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+)
+PAGINA_BUSCA = "https://venda-imoveis.caixa.gov.br/sistema/busca-imovel.asp?sltTipoBusca=imoveis"
+
+
+def _parece_bloqueio(texto: str) -> bool:
+    t = normalizar(texto[:3000])
+    return any(x in t for x in ("bot manager", "captcha", "<html", "<head"))
+
+
+def _baixar_via_requests() -> str:
+    resp = requests.get(CSV_URL, timeout=120, headers={"User-Agent": UA})
+    resp.raise_for_status()
+    return resp.content.decode("latin-1")
+
+
+def _baixar_via_navegador() -> str:
+    """A Caixa bloqueia IPs de datacenter com desafio JS (Radware Bot Manager).
+    Um navegador real resolve o desafio; depois buscamos o CSV com os cookies dele."""
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as p:
+        nav = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+        )
+        ctx = nav.new_context(
+            user_agent=UA,
+            locale="pt-BR",
+            timezone_id="America/Sao_Paulo",
+            viewport={"width": 1366, "height": 768},
+        )
+        ctx.add_init_script(
+            "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+        )
+        pg = ctx.new_page()
+        pg.goto(PAGINA_BUSCA, wait_until="domcontentloaded", timeout=90_000)
+
+        # dá tempo do desafio JS rodar e gravar os cookies
+        for _ in range(6):
+            pg.wait_for_timeout(3000)
+            if not _parece_bloqueio(pg.content()[:2000]) or "busca" in pg.url:
+                break
+
+        # busca o CSV de dentro da própria página (mesma origem, cookies válidos)
+        b64 = pg.evaluate(
+            """async (url) => {
+                const r = await fetch(url, {credentials: 'include'});
+                const buf = new Uint8Array(await r.arrayBuffer());
+                let s = '';
+                for (const b of buf) s += String.fromCharCode(b);
+                return btoa(s);
+            }""",
+            CSV_URL,
+        )
+        nav.close()
+
+    import base64
+    return base64.b64decode(b64).decode("latin-1")
+
+
 def baixar_csv() -> str:
     print(f"Baixando {CSV_URL} ...")
-    resp = requests.get(
-        CSV_URL,
-        timeout=120,
-        headers={
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-            )
-        },
-    )
-    resp.raise_for_status()
-    # A Caixa publica em latin-1 (ISO-8859-1). Fallback para utf-8 se mudar.
-    for enc in ("latin-1", "utf-8-sig", "utf-8"):
-        try:
-            texto = resp.content.decode(enc)
-            if "vel" in texto[:4000] or ";" in texto[:4000]:
-                print(f"  ok — {len(resp.content)/1024:.0f} KB, encoding {enc}")
-                return texto
-        except UnicodeDecodeError:
-            continue
-    raise RuntimeError("Não consegui decodificar o CSV da Caixa.")
+    try:
+        texto = _baixar_via_requests()
+        if not _parece_bloqueio(texto):
+            print(f"  ok — {len(texto)/1024:.0f} KB (requisição direta)")
+            return texto
+        print("  bloqueado por desafio anti-bot — tentando via navegador…")
+    except Exception as e:
+        print(f"  requisição direta falhou ({e}) — tentando via navegador…")
+
+    texto = _baixar_via_navegador()
+    if _parece_bloqueio(texto):
+        raise RuntimeError(
+            "A Caixa devolveu uma página de desafio anti-bot mesmo pelo navegador."
+        )
+    print(f"  ok — {len(texto)/1024:.0f} KB (via navegador)")
+    return texto
 
 
 def achar_cabecalho(linhas):
