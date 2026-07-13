@@ -98,6 +98,11 @@
   td a:hover{text-decoration:underline}
   .end-td{white-space:normal;max-width:330px;color:var(--cinza)}
 
+  .mais{display:flex;justify-content:center;padding:30px 0 4px}
+  .btn-mais{font:inherit;font-size:14px;font-weight:700;color:var(--azul);background:#fff;
+       border:1.5px solid var(--linha);border-radius:10px;padding:13px 30px;cursor:pointer;
+       box-shadow:var(--sombra);transition:border-color .15s,transform .1s}
+  .btn-mais:hover{border-color:var(--azul);transform:translateY(-1px)}
   .vazio{text-align:center;padding:70px 20px;color:var(--cinza)}
   footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-top:1px solid var(--linha)}
   .oculto{display:none!important}
@@ -168,6 +173,9 @@
       <tbody id="corpo"></tbody>
     </table>
   </div>
+  <div id="mais" class="mais oculto">
+    <button id="btn-mais" class="btn-mais" onclick="verMais()">Ver mais imóveis</button>
+  </div>
   <div id="vazio" class="vazio oculto">Nenhum imóvel encontrado com esses filtros.</div>
 </main>
 
@@ -181,6 +189,7 @@
 let DADOS = {resumo:{}, imoveis:[]};
 let VISTA = [];
 let VISUAL = 'vitrine';
+let visiveis = 0;                  // quantos cards estão na tela agora
 let ORDEM_TABELA = {col:'desconto', asc:false};
 
 const WHATSAPP = '554199281177';   // Auxiliadora Predial Hugo Lange
@@ -302,17 +311,57 @@ function ordenar(lista){
   return c;
 }
 
-function render(){
+const LINHAS_POR_LEVA = 5;
+
+// quantas colunas o grid está usando agora (muda conforme a largura da tela)
+function colunas(){
+  const g = getComputedStyle(document.getElementById('vitrine')).gridTemplateColumns;
+  return Math.max(1, g.split(' ').filter(Boolean).length);
+}
+function tamanhoDaLeva(){ return colunas() * LINHAS_POR_LEVA; }
+
+function render(zerarPaginacao = true){
   VISTA = ordenar(filtrar());
+  if (zerarPaginacao) visiveis = tamanhoDaLeva();
   document.getElementById('contagem').innerHTML =
     `<b>${VISTA.length}</b> de ${DADOS.imoveis.length} imóveis`;
   document.getElementById('vazio').classList.toggle('oculto', VISTA.length > 0);
   if (VISUAL === 'vitrine') renderCards(); else renderTabela();
 }
 
+function verMais(){
+  visiveis += tamanhoDaLeva();
+  renderCards();
+  // rola até o começo da nova leva
+  const cards = document.querySelectorAll('#vitrine .card');
+  const alvo = cards[visiveis - tamanhoDaLeva()];
+  if (alvo) alvo.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function atualizarBotaoMais(){
+  const barra = document.getElementById('mais');
+  const restam = VISTA.length - visiveis;
+  if (VISUAL !== 'vitrine' || restam <= 0) {
+    barra.classList.add('oculto');
+    return;
+  }
+  barra.classList.remove('oculto');
+  document.getElementById('btn-mais').textContent =
+    `Ver mais imóveis (+${Math.min(restam, tamanhoDaLeva())} de ${restam} restantes)`;
+}
+
+// se a janela mudar de largura, o nº de colunas muda — reajusta a leva
+let redimensionando;
+window.addEventListener('resize', () => {
+  clearTimeout(redimensionando);
+  redimensionando = setTimeout(() => {
+    if (VISUAL === 'vitrine') { visiveis = Math.max(visiveis, tamanhoDaLeva()); renderCards(); }
+  }, 200);
+});
+
 function renderCards(){
   const el = document.getElementById('vitrine');
-  el.innerHTML = VISTA.map(i => {
+  el.innerHTML = VISTA.slice(0, visiveis).map(i => {
     const d = i.desconto || 0;
     const specs = [
       i.area    ? `<span class="chip">${i.area.toLocaleString('pt-BR')} m²</span>` : '',
@@ -345,9 +394,11 @@ function renderCards(){
       </div>
     </article>`;
   }).join('');
+  atualizarBotaoMais();
 }
 
 function renderTabela(){
+  document.getElementById('mais').classList.add('oculto');
   const cs = [...VISTA].sort((a,b)=>{
     const k = ORDEM_TABELA.col, s = ORDEM_TABELA.asc ? 1 : -1;
     const va = a[k], vb = b[k];
