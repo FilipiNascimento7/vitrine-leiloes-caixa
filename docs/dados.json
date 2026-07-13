@@ -1,7 +1,7 @@
 {
  "resumo": {
-  "atualizado_em": "13/07/2026 às 12:35",
-  "atualizado_iso": "2026-07-13T12:35:52.295317-03:00",
+  "atualizado_em": "13/07/2026 às 12:43",
+  "atualizado_iso": "2026-07-13T12:43:36.646755-03:00",
   "total": 161,
   "total_pr": 716,
   "municipios": [
@@ -33,7 +33,7 @@
    "avaliacao": 4261000.0,
    "desconto": 68.18,
    "economia": 2904840.54,
-   "tipo": "Terreno",
+   "tipo": "Gleba",
    "area": 72600.0,
    "quartos": null,
    "aceita_financiamento": false,
@@ -56,7 +56,7 @@
    "avaliacao": 4880000.0,
    "desconto": 49.63,
    "economia": 2421752.22,
-   "tipo": "Terreno",
+   "tipo": "Comercial",
    "area": 2890.8,
    "quartos": null,
    "aceita_financiamento": false,
