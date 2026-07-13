@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitrine — Imóveis de Leilão Caixa | Curitiba e Região Metropolitana</title>
+<style>
+  :root{
+    --azul:#0B4F9E; --azul-esc:#083A75; --laranja:#F39200; --verde:#1B8A4B;
+    --tinta:#16202B; --cinza:#6B7785; --linha:#E3E8EE; --fundo:#F5F7FA; --branco:#fff;
+    --sombra:0 1px 3px rgba(16,32,48,.08), 0 8px 24px rgba(16,32,48,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+       background:var(--fundo);color:var(--tinta);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+  /* ---------- topo ---------- */
+  header{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-esc) 100%);color:#fff;padding:26px 24px 22px}
+  .wrap{max-width:1400px;margin:0 auto}
+  .marca{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .marca h1{font-size:23px;font-weight:700;letter-spacing:-.3px}
+  .marca .sub{font-size:14px;opacity:.85}
+  .atualizado{font-size:12.5px;opacity:.8;margin-top:6px}
+
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:20px}
+  .kpi{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);
+       border-radius:10px;padding:12px 14px}
+  .kpi b{display:block;font-size:22px;font-weight:700;letter-spacing:-.5px}
+  .kpi span{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;opacity:.85}
+
+  /* ---------- filtros ---------- */
+  .barra{background:var(--branco);border-bottom:1px solid var(--linha);
+         position:sticky;top:0;z-index:20;box-shadow:0 1px 2px rgba(16,32,48,.04)}
+  .filtros{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px;max-width:1400px;margin:0 auto}
+  input[type=search],select{font:inherit;font-size:13.5px;padding:8px 11px;border:1px solid var(--linha);
+        border-radius:8px;background:#fff;color:var(--tinta);outline:none;min-width:130px}
+  input[type=search]{flex:1;min-width:210px}
+  input:focus,select:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(11,79,158,.1)}
+  .abas{display:flex;background:var(--fundo);border-radius:8px;padding:3px;gap:2px}
+  .abas button{font:inherit;font-size:13px;font-weight:600;padding:6px 14px;border:0;border-radius:6px;
+       background:transparent;color:var(--cinza);cursor:pointer}
+  .abas button.on{background:#fff;color:var(--azul);box-shadow:var(--sombra)}
+  .btn{font:inherit;font-size:13px;font-weight:600;padding:8px 14px;border:1px solid var(--linha);
+       border-radius:8px;background:#fff;color:var(--tinta);cursor:pointer}
+  .btn:hover{border-color:var(--azul);color:var(--azul)}
+  .contagem{font-size:13px;color:var(--cinza);margin-left:auto;white-space:nowrap}
+  .contagem b{color:var(--tinta)}
+
+  main{max-width:1400px;margin:0 auto;padding:22px 24px 60px}
+
+  /* ---------- cards ---------- */
+  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:18px}
+  .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--sombra);
+        display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 4px 12px rgba(16,32,48,.1),0 16px 40px rgba(16,32,48,.1)}
+  .foto{position:relative;aspect-ratio:4/3;background:#E8ECF1;overflow:hidden}
+  .foto img{width:100%;height:100%;object-fit:cover;display:block}
+  .foto .semfoto{width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+        color:#A6B0BC;font-size:13px;background:repeating-linear-gradient(45deg,#EDF0F4,#EDF0F4 10px,#E8ECF1 10px,#E8ECF1 20px)}
+  .selo{position:absolute;top:10px;left:10px;background:var(--verde);color:#fff;font-size:12px;
+        font-weight:700;padding:4px 9px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+  .selo.zero{background:var(--cinza)}
+  .modal-tag{position:absolute;bottom:10px;left:10px;background:rgba(11,79,158,.94);color:#fff;
+        font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;padding:4px 8px;border-radius:5px}
+  .corpo{padding:14px 15px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .tipo{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--laranja)}
+  .local{font-size:15px;font-weight:700;letter-spacing:-.2px}
+  .end{font-size:12.5px;color:var(--cinza);line-height:1.4;
+       display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .specs{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+  .chip{font-size:11px;background:var(--fundo);border:1px solid var(--linha);color:var(--cinza);
+        padding:2.5px 7px;border-radius:20px;white-space:nowrap}
+  .chip.ok{background:#EAF6EF;border-color:#CBE8D8;color:var(--verde);font-weight:600}
+  .precos{margin-top:auto;padding-top:12px;border-top:1px solid var(--linha)}
+  .aval{font-size:12px;color:var(--cinza);text-decoration:line-through}
+  .preco{font-size:21px;font-weight:800;color:var(--azul);letter-spacing:-.6px}
+  .cta{display:block;margin-top:11px;text-align:center;background:var(--laranja);color:#fff;
+       font-size:13.5px;font-weight:700;padding:9px;border-radius:8px;text-decoration:none}
+  .cta:hover{background:#DB8300}
+
+  /* ---------- tabela ---------- */
+  .tabela-wrap{background:#fff;border-radius:12px;box-shadow:var(--sombra);overflow:auto;max-height:76vh}
+  table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}
+  th{position:sticky;top:0;background:var(--azul);color:#fff;text-align:left;padding:10px 12px;
+     font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;z-index:2}
+  th:hover{background:var(--azul-esc)}
+  th .seta{opacity:.45;font-size:9px;margin-left:3px}
+  td{padding:9px 12px;border-bottom:1px solid var(--linha)}
+  tbody tr:hover{background:#F8FAFC}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  td.desc-alto{color:var(--verde);font-weight:700}
+  td a{color:var(--azul);font-weight:600;text-decoration:none}
+  td a:hover{text-decoration:underline}
+  .end-td{white-space:normal;max-width:330px;color:var(--cinza)}
+
+  .vazio{text-align:center;padding:70px 20px;color:var(--cinza)}
+  footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-top:1px solid var(--linha)}
+  .oculto{display:none!important}
+  @media(max-width:640px){.contagem{margin-left:0;width:100%}.marca h1{font-size:19px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="marca">
+      <h1>Vitrine de Imóveis de Leilão — Caixa</h1>
+      <span class="sub">Curitiba e Região Metropolitana</span>
+    </div>
+    <div class="atualizado" id="atualizado">carregando…</div>
+    <div class="kpis">
+      <div class="kpi"><b id="k-total">—</b><span>Imóveis disponíveis</span></div>
+      <div class="kpi"><b id="k-desc">—</b><span>Desconto médio</span></div>
+      <div class="kpi"><b id="k-max">—</b><span>Maior desconto</span></div>
+      <div class="kpi"><b id="k-cidades">—</b><span>Municípios</span></div>
+      <div class="kpi"><b id="k-economia">—</b><span>Economia total vs. avaliação</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="barra">
+  <div class="filtros">
+    <div class="abas">
+      <button id="ab-vitrine" class="on" onclick="modo('vitrine')">Vitrine</button>
+      <button id="ab-tabela" onclick="modo('tabela')">Tabela</button>
+    </div>
+    <input type="search" id="f-busca" placeholder="Buscar por bairro, endereço, nº do imóvel…" oninput="render()">
+    <select id="f-cidade" onchange="render()"><option value="">Todas as cidades</option></select>
+    <select id="f-tipo" onchange="render()"><option value="">Todos os tipos</option></select>
+    <select id="f-modalidade" onchange="render()"><option value="">Todas as modalidades</option></select>
+    <select id="f-preco" onchange="render()">
+      <option value="">Qualquer preço</option>
+      <option value="0-100000">até R$ 100 mil</option>
+      <option value="100000-200000">R$ 100–200 mil</option>
+      <option value="200000-350000">R$ 200–350 mil</option>
+      <option value="350000-500000">R$ 350–500 mil</option>
+      <option value="500000-999999999">acima de R$ 500 mil</option>
+    </select>
+    <select id="f-desconto" onchange="render()">
+      <option value="">Qualquer desconto</option>
+      <option value="10">10%+</option>
+      <option value="25">25%+</option>
+      <option value="40">40%+</option>
+      <option value="50">50%+</option>
+    </select>
+    <select id="f-ordem" onchange="render()">
+      <option value="desconto">Maior desconto</option>
+      <option value="preco-asc">Menor preço</option>
+      <option value="preco-desc">Maior preço</option>
+      <option value="economia">Maior economia (R$)</option>
+      <option value="cidade">Cidade (A–Z)</option>
+    </select>
+    <button class="btn" onclick="exportar()">Exportar CSV</button>
+    <div class="contagem" id="contagem"></div>
+  </div>
+</div>
+
+<main>
+  <div id="vitrine" class="grade"></div>
+  <div id="tabela" class="tabela-wrap oculto">
+    <table>
+      <thead><tr id="cabecalho"></tr></thead>
+      <tbody id="corpo"></tbody>
+    </table>
+  </div>
+  <div id="vazio" class="vazio oculto">Nenhum imóvel encontrado com esses filtros.</div>
+</main>
+
+<footer>
+  Dados públicos do portal de Venda de Imóveis da Caixa Econômica Federal · atualização automática diária.<br>
+  Confira sempre as condições, o edital e a matrícula no site oficial antes de qualquer proposta.
+</footer>
+
+<!--DADOS-->
+<script>
+let DADOS = {resumo:{}, imoveis:[]};
+let VISTA = [];
+let VISUAL = 'vitrine';
+let ORDEM_TABELA = {col:'desconto', asc:false};
+
+const BRL = v => v == null ? '—' :
+  v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+const PCT = v => v == null ? '—' : v.toFixed(1).replace('.',',') + '%';
+
+const COLUNAS = [
+  {k:'numero',      t:'Nº',          f:v=>v},
+  {k:'cidade',      t:'Cidade',      f:v=>v},
+  {k:'bairro',      t:'Bairro',      f:v=>v||'—'},
+  {k:'tipo',        t:'Tipo',        f:v=>v},
+  {k:'area',        t:'Área m²',     f:v=>v?v.toLocaleString('pt-BR'):'—', num:true},
+  {k:'quartos',     t:'Qtos',        f:v=>v??'—', num:true},
+  {k:'preco',       t:'Preço',       f:BRL, num:true},
+  {k:'avaliacao',   t:'Avaliação',   f:BRL, num:true},
+  {k:'desconto',    t:'Desc.',       f:PCT, num:true},
+  {k:'economia',    t:'Economia',    f:BRL, num:true},
+  {k:'modalidade',  t:'Modalidade',  f:v=>v},
+  {k:'endereco',    t:'Endereço',    f:v=>v, end:true},
+  {k:'link',        t:'Caixa',       f:v=>`<a href="${v}" target="_blank" rel="noopener">abrir ↗</a>`},
+];
+
+async function iniciar(){
+  if (window.DADOS_EMBUTIDOS) {
+    DADOS = window.DADOS_EMBUTIDOS;
+  } else {
+    try {
+      DADOS = await (await fetch('dados.json?v=' + Date.now())).json();
+    } catch (e) {
+      document.getElementById('atualizado').textContent =
+        'Não consegui carregar dados.json — abra pelo link publicado (GitHub Pages) ou use o vitrine_offline.html.';
+      return;
+    }
+  }
+  cabecalhoKPIs();
+  preencherFiltros();
+  montarCabecalhoTabela();
+  render();
+}
+
+function cabecalhoKPIs(){
+  const r = DADOS.resumo, im = DADOS.imoveis;
+  document.getElementById('atualizado').textContent = 'Atualizado em ' + r.atualizado_em +
+    ' · ' + r.total + ' imóveis · fonte: Caixa Econômica Federal';
+  document.getElementById('k-total').textContent = r.total;
+  document.getElementById('k-desc').textContent = PCT(r.desconto_medio);
+  document.getElementById('k-max').textContent =
+    PCT(Math.max(0, ...im.map(i => i.desconto || 0)));
+  document.getElementById('k-cidades').textContent = r.municipios.length;
+  const eco = im.reduce((s,i)=> s + (i.economia || 0), 0);
+  document.getElementById('k-economia').textContent =
+    'R$ ' + (eco/1e6).toFixed(1).replace('.',',') + ' mi';
+}
+
+function preencherFiltros(){
+  const opts = (id, valores) => {
+    const s = document.getElementById(id);
+    valores.sort().forEach(v => s.insertAdjacentHTML('beforeend', `<option>${v}</option>`));
+  };
+  opts('f-cidade',     [...new Set(DADOS.imoveis.map(i=>i.cidade))]);
+  opts('f-tipo',       [...new Set(DADOS.imoveis.map(i=>i.tipo))]);
+  opts('f-modalidade', [...new Set(DADOS.imoveis.map(i=>i.modalidade))]);
+}
+
+function montarCabecalhoTabela(){
+  document.getElementById('cabecalho').innerHTML = COLUNAS.map(c =>
+    `<th onclick="ordenarTabela('${c.k}')">${c.t}<span class="seta">▾</span></th>`).join('');
+}
+
+function filtrar(){
+  const q   = document.getElementById('f-busca').value.trim().toLowerCase();
+  const cid = document.getElementById('f-cidade').value;
+  const tip = document.getElementById('f-tipo').value;
+  const mod = document.getElementById('f-modalidade').value;
+  const [pmin, pmax] = (document.getElementById('f-preco').value || '0-999999999').split('-').map(Number);
+  const dmin = Number(document.getElementById('f-desconto').value || 0);
+
+  return DADOS.imoveis.filter(i => {
+    if (cid && i.cidade !== cid) return false;
+    if (tip && i.tipo !== tip) return false;
+    if (mod && i.modalidade !== mod) return false;
+    const p = i.preco || 0;
+    if (p < pmin || p > pmax) return false;
+    if ((i.desconto || 0) < dmin) return false;
+    if (q) {
+      const alvo = `${i.numero} ${i.bairro} ${i.endereco} ${i.cidade} ${i.descricao}`.toLowerCase();
+      if (!alvo.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function ordenar(lista){
+  const o = document.getElementById('f-ordem').value;
+  const c = [...lista];
+  const n = v => v == null ? -Infinity : v;
+  if (o === 'desconto')    c.sort((a,b)=> n(b.desconto) - n(a.desconto));
+  if (o === 'preco-asc')   c.sort((a,b)=> n(a.preco) - n(b.preco));
+  if (o === 'preco-desc')  c.sort((a,b)=> n(b.preco) - n(a.preco));
+  if (o === 'economia')    c.sort((a,b)=> n(b.economia) - n(a.economia));
+  if (o === 'cidade')      c.sort((a,b)=> a.cidade.localeCompare(b.cidade,'pt-BR') ||
+                                          (a.bairro||'').localeCompare(b.bairro||'','pt-BR'));
+  return c;
+}
+
+function render(){
+  VISTA = ordenar(filtrar());
+  document.getElementById('contagem').innerHTML =
+    `<b>${VISTA.length}</b> de ${DADOS.imoveis.length} imóveis`;
+  document.getElementById('vazio').classList.toggle('oculto', VISTA.length > 0);
+  if (VISUAL === 'vitrine') renderCards(); else renderTabela();
+}
+
+function renderCards(){
+  const el = document.getElementById('vitrine');
+  el.innerHTML = VISTA.map(i => {
+    const d = i.desconto || 0;
+    const specs = [
+      i.area    ? `<span class="chip">${i.area.toLocaleString('pt-BR')} m²</span>` : '',
+      i.quartos ? `<span class="chip">${i.quartos} qto${i.quartos>1?'s':''}</span>` : '',
+      i.aceita_financiamento ? '<span class="chip ok">Financia</span>' : '',
+      i.aceita_fgts          ? '<span class="chip ok">FGTS</span>' : '',
+    ].join('');
+    return `
+    <article class="card">
+      <div class="foto">
+        <img src="${i.foto}" alt="${i.tipo} em ${i.bairro}, ${i.cidade}" loading="lazy"
+             onerror="this.outerHTML='<div class=\\'semfoto\\'>sem foto disponível</div>'">
+        <span class="selo${d>0?'':' zero'}">${d>0 ? PCT(d)+' OFF' : 'sem desconto'}</span>
+        <span class="modal-tag">${i.modalidade}</span>
+      </div>
+      <div class="corpo">
+        <div class="tipo">${i.tipo}</div>
+        <div class="local">${i.bairro || i.cidade}${i.bairro ? ' · ' + i.cidade : ''}</div>
+        <div class="end">${i.endereco}</div>
+        <div class="specs">${specs}</div>
+        <div class="precos">
+          ${i.avaliacao && d > 0 ? `<div class="aval">Avaliação ${BRL(i.avaliacao)}</div>` : ''}
+          <div class="preco">${BRL(i.preco)}</div>
+          <a class="cta" href="${i.link}" target="_blank" rel="noopener">Ver no site da Caixa</a>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+function renderTabela(){
+  const cs = [...VISTA].sort((a,b)=>{
+    const k = ORDEM_TABELA.col, s = ORDEM_TABELA.asc ? 1 : -1;
+    const va = a[k], vb = b[k];
+    if (typeof va === 'number' || typeof vb === 'number')
+      return ((va ?? -Infinity) - (vb ?? -Infinity)) * s;
+    return String(va ?? '').localeCompare(String(vb ?? ''), 'pt-BR') * s;
+  });
+  document.getElementById('corpo').innerHTML = cs.map(i => '<tr>' + COLUNAS.map(c => {
+    const cls = [c.num ? 'num' : '', c.end ? 'end-td' : '',
+                 (c.k === 'desconto' && (i.desconto || 0) >= 30) ? 'desc-alto' : ''
+                ].filter(Boolean).join(' ');
+    return `<td class="${cls}">${c.f(i[c.k])}</td>`;
+  }).join('') + '</tr>').join('');
+}
+
+function ordenarTabela(col){
+  ORDEM_TABELA = {col, asc: ORDEM_TABELA.col === col ? !ORDEM_TABELA.asc : false};
+  renderTabela();
+}
+
+function modo(m){
+  VISUAL = m;
+  document.getElementById('ab-vitrine').classList.toggle('on', m === 'vitrine');
+  document.getElementById('ab-tabela').classList.toggle('on', m === 'tabela');
+  document.getElementById('vitrine').classList.toggle('oculto', m !== 'vitrine');
+  document.getElementById('tabela').classList.toggle('oculto', m !== 'tabela');
+  render();
+}
+
+function exportar(){
+  const campos = ['numero','cidade','bairro','endereco','tipo','area','quartos','preco',
+                  'avaliacao','desconto','economia','modalidade','link'];
+  const esc = v => `"${String(v ?? '').replace(/"/g,'""')}"`;
+  const csv = [campos.join(';'),
+    ...VISTA.map(i => campos.map(c => esc(i[c])).join(';'))].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['﻿' + csv], {type:'text/csv;charset=utf-8'}));
+  a.download = `imoveis-caixa-curitiba-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+}
+
+iniciar();
+</script>
+</body>
+</html>
