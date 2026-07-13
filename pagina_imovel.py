@@ -1,12 +1,29 @@
 # -*- coding: utf-8 -*-
 """Gera a página de detalhe de um imóvel — tudo o que a Caixa mostra,
-mais galeria de fotos e download do edital e da matrícula."""
+mais galeria de fotos, download do edital e da matrícula, e o botão
+TENHO INTERESSE que leva ao WhatsApp da Auxiliadora Predial Hugo Lange."""
 
 import html
 import os
+import urllib.parse
+
+# WhatsApp da Auxiliadora Predial Hugo Lange (formato internacional, só dígitos)
+WHATSAPP = "554199281117"
+SITE = "https://filipinascimento7.github.io/vitrine-leiloes-caixa"
+
+ICONE_ZAP = (
+    '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+    '<path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1'
+    '-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5'
+    '0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1'
+    'c.1.2 2.1 3.2 5 4.5.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4'
+    '-.1-.1-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2'
+    '5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.2.8.9-3.1-.2-.3'
+    'c-.8-1.3-1.3-2.9-1.3-4.5 0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.6 8.5-8 8.5z"/></svg>'
+)
 
 CSS = """
-:root{--azul:#0B4F9E;--azul-esc:#083A75;--laranja:#F39200;--verde:#1B8A4B;
+:root{--azul:#0B4F9E;--azul-esc:#083A75;--laranja:#F39200;--verde:#1B8A4B;--zap:#25D366;
  --tinta:#16202B;--cinza:#6B7785;--linha:#E3E8EE;--fundo:#F5F7FA;
  --sombra:0 1px 3px rgba(16,32,48,.08),0 8px 24px rgba(16,32,48,.06);}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -35,6 +52,7 @@ main{max-width:1180px;margin:0 auto;padding:22px 24px 60px;display:grid;
 .preco span,.aval span{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--cinza)}
 .aval b{display:block;font-size:18px;color:var(--cinza);text-decoration:line-through;font-weight:600}
 .eco{margin-left:auto;text-align:right}
+.eco span{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--cinza)}
 .eco b{display:block;font-size:18px;color:var(--verde);font-weight:800}
 
 dl{display:grid;grid-template-columns:auto 1fr;gap:9px 18px;font-size:14px}
@@ -44,9 +62,8 @@ dd{font-weight:600;word-break:break-word}
 .blocos p{font-size:14px;margin-bottom:8px}
 .blocos ul{list-style:none;font-size:14px}
 .blocos li{padding-left:16px;position:relative;margin-bottom:7px}
-.blocos li:before{content:"•";position:absolute;left:0;color:var(--laranja);font-weight:700}
-.blocos h3{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--laranja);
- margin:16px 0 8px}
+.blocos li:before{content:"\\2022";position:absolute;left:0;color:var(--laranja);font-weight:700}
+.blocos h3{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--laranja);margin:16px 0 8px}
 .blocos h3:first-child{margin-top:0}
 
 .galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
@@ -61,11 +78,15 @@ dd{font-weight:600;word-break:break-word}
 
 .btn{display:block;text-align:center;text-decoration:none;font-size:14px;font-weight:700;
  padding:12px;border-radius:9px;margin-bottom:9px}
-.btn.laranja{background:var(--laranja);color:#fff}
-.btn.laranja:hover{background:#DB8300}
+.btn.zap{background:var(--zap);color:#fff;font-size:15px;letter-spacing:.4px;padding:14px;
+ box-shadow:0 4px 14px rgba(37,211,102,.32);display:flex;align-items:center;justify-content:center;gap:9px}
+.btn.zap:hover{background:#1FB855}
+.btn.zap svg{width:19px;height:19px;fill:#fff;flex:none}
 .btn.linha{border:1.5px solid var(--linha);color:var(--tinta);background:#fff}
 .btn.linha:hover{border-color:var(--azul);color:var(--azul)}
-.nota{font-size:12px;color:var(--cinza);margin-top:10px;line-height:1.5}
+.btn.discreto{background:transparent;color:var(--cinza);font-weight:600;font-size:12.5px;padding:6px;margin-bottom:0}
+.btn.discreto:hover{color:var(--azul)}
+.nota{font-size:12px;color:var(--cinza);margin-top:12px;line-height:1.5}
 
 #lupa{position:fixed;inset:0;background:rgba(10,18,28,.92);display:none;align-items:center;
  justify-content:center;z-index:99;cursor:zoom-out;padding:30px}
@@ -81,8 +102,28 @@ def _brl(v):
     return "R$ " + f"{v:,.2f}".replace(",", "@").replace(".", ",").replace("@", ".")
 
 
+def _pct(v):
+    return f"{v:.1f}".replace(".", ",") + "%"
+
+
 def _e(t):
     return html.escape(str(t or ""))
+
+
+def link_whatsapp(im: dict) -> str:
+    """Mensagem pronta com o imóvel identificado."""
+    d = im.get("desconto") or 0
+    msg = (
+        "Olá! Tenho interesse neste imóvel de leilão da Caixa:\n\n"
+        f"{im['tipo']} em {im['bairro'] or im['cidade']}, {im['cidade']}\n"
+        f"Código do imóvel: {im['numero']}\n"
+        f"Valor mínimo: {_brl(im.get('preco'))}"
+        + (f" ({_pct(d)} de desconto)" if d > 0 else "")
+        + "\n"
+        + (f"{SITE}/{im['pagina']}\n" if im.get("pagina") else "")
+        + "\nGostaria de mais informações."
+    )
+    return f"https://wa.me/{WHATSAPP}?text={urllib.parse.quote(msg)}"
 
 
 def gerar(im: dict, atualizado: str) -> str:
@@ -99,38 +140,30 @@ def gerar(im: dict, atualizado: str) -> str:
     tags = [f'<span class="tag">{_e(im["modalidade"])}</span>',
             f'<span class="tag">{_e(im["tipo"])}</span>']
     if desconto > 0:
-        tags.insert(0, f'<span class="tag off">{desconto:.1f}% de desconto</span>'.replace(".", ","))
+        tags.insert(0, f'<span class="tag off">{_pct(desconto)} de desconto</span>')
 
-    # fotos
     if fotos:
-        principal = f'<img class="principal" src="{_e(fotos[0])}" alt="Foto do imóvel" onclick="ampliar(this.src)">'
-        miniaturas = "".join(
-            f'<img src="{_e(f)}" alt="Foto {i+1} do imóvel" loading="lazy" onclick="ampliar(this.src)">'
-            for i, f in enumerate(fotos[1:], 0)
+        principal = (f'<img class="principal" src="{_e(fotos[0])}" alt="Foto do imóvel" '
+                     f'onclick="ampliar(this.src)">')
+        mini = "".join(
+            f'<img src="{_e(f)}" alt="Foto do imóvel" loading="lazy" onclick="ampliar(this.src)">'
+            for f in fotos[1:]
         )
-        galeria = f'<div class="galeria">{miniaturas}</div>' if miniaturas else ""
+        galeria = f'<div class="galeria">{mini}</div>' if mini else ""
     else:
         principal = '<div class="semfoto">sem foto cadastrada pela Caixa</div>'
         galeria = ""
 
-    # ficha técnica: todos os campos que a Caixa exibe, na ordem em que aparecem
     ordem = ["Tipo de imóvel", "Número do imóvel", "Matrícula(s)", "Comarca", "Ofício",
              "Inscrição imobiliária", "Averbação dos leilões negativos",
              "Edital", "Número do item", "Leiloeiro(a)", "Data da disputa"]
-    itens = []
-    for k in ordem:
-        if campos.get(k):
-            itens.append((k, campos[k]))
-    for k, v in campos.items():          # qualquer campo novo que a Caixa passe a exibir
-        if k not in ordem and k not in ("Valor de avaliação", "Valor mínimo de venda",
-                                        "Descrição", "Endereço"):
-            itens.append((k, v))
-    for k, v in areas.items():
-        itens.append((k, v))
+    ignorar = ("Valor de avaliação", "Valor mínimo de venda", "Descrição", "Endereço")
+    itens = [(k, campos[k]) for k in ordem if campos.get(k)]
+    itens += [(k, v) for k, v in campos.items() if k not in ordem and k not in ignorar]
+    itens += list(areas.items())
     itens += [("Cidade", im["cidade"]), ("Bairro", im["bairro"] or "—")]
     ficha = "".join(f"<dt>{_e(k)}</dt><dd>{_e(v)}</dd>" for k, v in itens)
 
-    # blocos de texto (descrição, formas de pagamento, regras de despesas)
     rotulos = {"descricao_completa": "Descrição",
                "formas_pagamento": "Formas de pagamento aceitas",
                "regras_despesas": "Regras para pagamento das despesas"}
@@ -146,14 +179,18 @@ def gerar(im: dict, atualizado: str) -> str:
         partes.append(f"<h3>{rotulo}</h3>{corpo}")
     if not partes and im.get("descricao"):
         partes.append(f"<h3>Descrição</h3><p>{_e(im['descricao'])}</p>")
-    texto_livre = "".join(partes)
+    texto_livre = "".join(partes) or "<p>Sem informações adicionais.</p>"
 
-    # downloads
-    botoes = [f'<a class="btn laranja" href="{_e(im["link"])}" target="_blank" rel="noopener">Dar lance no site da Caixa</a>']
+    botoes = [f'<a class="btn zap" href="{link_whatsapp(im)}" target="_blank" '
+              f'rel="noopener">{ICONE_ZAP} TENHO INTERESSE</a>']
     if d.get("edital"):
-        botoes.append(f'<a class="btn linha" href="{_e(d["edital"])}" target="_blank" rel="noopener">📄 Baixar edital e anexos</a>')
+        botoes.append(f'<a class="btn linha" href="{_e(d["edital"])}" target="_blank" '
+                      f'rel="noopener">Baixar edital e anexos</a>')
     if d.get("matricula"):
-        botoes.append(f'<a class="btn linha" href="{_e(d["matricula"])}" target="_blank" rel="noopener">📄 Baixar matrícula do imóvel</a>')
+        botoes.append(f'<a class="btn linha" href="{_e(d["matricula"])}" target="_blank" '
+                      f'rel="noopener">Baixar matrícula do imóvel</a>')
+    botoes.append(f'<a class="btn discreto" href="{_e(im["link"])}" target="_blank" '
+                  f'rel="noopener">Ver anúncio original no site da Caixa</a>')
 
     aval = (f'<div class="aval"><span>Avaliação Caixa</span><b>{_brl(im["avaliacao"])}</b></div>'
             if im.get("avaliacao") and desconto > 0 else "")
@@ -172,7 +209,7 @@ def gerar(im: dict, atualizado: str) -> str:
 
 <header>
   <div class="wrap">
-    <a class="voltar" href="../index.html">← Voltar para a vitrine</a>
+    <a class="voltar" href="../index.html">&larr; Voltar para a vitrine</a>
     <h1>{_e(titulo)}</h1>
     <div class="end">{_e(endereco)}</div>
     <div class="tags">{''.join(tags)}</div>
@@ -183,7 +220,7 @@ def gerar(im: dict, atualizado: str) -> str:
   <div>
     <div class="card">
       <div class="precos">
-        <div class="preco"><span>Valor mínimo de venda</span><b>{_brl(im['preco'])}</b></div>
+        <div class="preco"><span>Valor mínimo de venda</span><b>{_brl(im.get('preco'))}</b></div>
         {aval}
         {eco}
       </div>
@@ -196,7 +233,7 @@ def gerar(im: dict, atualizado: str) -> str:
 
     <div class="card blocos">
       <h2>Informações da Caixa</h2>
-      {texto_livre or "<p>Sem informações adicionais.</p>"}
+      {texto_livre}
     </div>
   </div>
 
@@ -208,11 +245,11 @@ def gerar(im: dict, atualizado: str) -> str:
     </div>
 
     <div class="card">
-      <h2>Documentos e lance</h2>
+      <h2>Fale com a gente</h2>
       {''.join(botoes)}
-      <p class="nota">O lance é dado exclusivamente no site oficial da Caixa.
-      Leia o edital e a matrícula antes de ofertar — eles trazem as condições de
-      ocupação, dívidas e regras de pagamento do imóvel.</p>
+      <p class="nota">Chame no WhatsApp e a Auxiliadora Predial Hugo Lange acompanha você
+      em todo o processo do leilão. Leia o edital e a matrícula antes de ofertar — eles
+      trazem as condições de ocupação, dívidas e regras de pagamento do imóvel.</p>
     </div>
   </div>
 </main>
@@ -221,7 +258,7 @@ def gerar(im: dict, atualizado: str) -> str:
 
 <footer>
   Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em {_e(atualizado)}.<br>
-  Esta página é uma vitrine informativa; confira sempre o site oficial antes de qualquer proposta.
+  Vitrine informativa — confira sempre o site oficial antes de qualquer proposta.
 </footer>
 
 <script>
@@ -229,7 +266,7 @@ function ampliar(src){{
   document.getElementById('lupa-img').src = src;
   document.getElementById('lupa').style.display = 'flex';
 }}
-document.addEventListener('keydown', e => {{
+document.addEventListener('keydown', function(e){{
   if (e.key === 'Escape') document.getElementById('lupa').style.display = 'none';
 }});
 </script>
