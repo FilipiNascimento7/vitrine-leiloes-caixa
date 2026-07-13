@@ -162,8 +162,18 @@
     .btn-mais{width:100%;padding:15px}
     .tabela-wrap{max-height:70vh}
   }
-  @media(max-width:380px){
+  @media(max-width:420px){
+    .grade{gap:8px}
+    .corpo{padding:9px 9px 11px}
+    .local{font-size:12.5px}
+    .end{font-size:10.5px;-webkit-line-clamp:1}
+    .preco{font-size:15px}
+    .cta,.cta-zap{font-size:11.5px;letter-spacing:0}
+  }
+  /* só em telas realmente estreitas volta para 1 coluna */
+  @media(max-width:335px){
     .grade{grid-template-columns:1fr}
+    .end{-webkit-line-clamp:2}
     .specs{display:flex}
   }
   @media(prefers-reduced-motion:reduce){
