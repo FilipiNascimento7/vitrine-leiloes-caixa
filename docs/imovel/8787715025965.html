@@ -70,9 +70,26 @@ dd{font-weight:600;word-break:break-word}
 .btn.discreto:hover{color:var(--azul)}
 .nota{font-size:12px;color:var(--cinza);margin-top:12px;line-height:1.5}
 
-#lupa{position:fixed;inset:0;background:rgba(10,18,28,.92);display:none;align-items:center;
- justify-content:center;z-index:99;cursor:zoom-out;padding:30px}
-#lupa img{max-width:100%;max-height:100%;border-radius:8px}
+#lupa{position:fixed;inset:0;background:rgba(10,18,28,.94);display:none;align-items:center;
+ justify-content:center;z-index:99;padding:70px 80px}
+#lupa.on{display:flex}
+#lupa img{max-width:100%;max-height:100%;border-radius:8px;background:#fff}
+.lupa-btn{position:absolute;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+ color:#fff;cursor:pointer;border-radius:10px;display:flex;align-items:center;justify-content:center;
+ font-family:inherit;transition:background .15s}
+.lupa-btn:hover{background:rgba(255,255,255,.28)}
+.lupa-seta{top:50%;transform:translateY(-50%);width:52px;height:64px;font-size:26px;font-weight:700}
+.lupa-seta.esq{left:14px}
+.lupa-seta.dir{right:14px}
+.lupa-seta[disabled]{opacity:.25;cursor:default}
+.lupa-fechar{top:16px;right:16px;height:42px;padding:0 16px;gap:8px;font-size:13.5px;font-weight:700}
+.lupa-conta{position:absolute;top:22px;left:50%;transform:translateX(-50%);color:#fff;
+ font-size:13px;opacity:.75;letter-spacing:.4px}
+@media(max-width:700px){
+ #lupa{padding:64px 10px}
+ .lupa-seta{width:40px;height:52px;font-size:20px}
+ .lupa-seta.esq{left:4px} .lupa-seta.dir{right:4px}
+}
 footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-top:1px solid var(--linha)}
 @media(max-width:900px){main{grid-template-columns:1fr}}
 </style>
@@ -112,13 +129,13 @@ footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-t
   <div>
     <div class="card">
       <h2>Fotos</h2>
-      <img class="principal" src="https://venda-imoveis.caixa.gov.br/fotos/F878771502596521.jpg" alt="Foto do imóvel" onclick="ampliar(this.src)">
+      <img class="principal" src="https://venda-imoveis.caixa.gov.br/fotos/F878771502596521.jpg" alt="Foto do imóvel" onclick="abrirFoto(0)">
       
     </div>
 
     <div class="card">
       <h2>Fale com a gente</h2>
-      <a class="btn zap" href="https://wa.me/554199281117?text=Ol%C3%A1%21%20Tenho%20interesse%20neste%20im%C3%B3vel%20de%20leil%C3%A3o%20da%20Caixa%3A%0A%0AApartamento%20em%20Campo%20De%20Santana%2C%20Curitiba%0AC%C3%B3digo%20do%20im%C3%B3vel%3A%208787715025965%0AValor%20m%C3%ADnimo%3A%20R%24%20106.667%2C03%20%2840%2C8%25%20de%20desconto%29%0Ahttps%3A//filipinascimento7.github.io/vitrine-leiloes-caixa/imovel/8787715025965.html%0A%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg> TENHO INTERESSE</a><a class="btn linha" href="https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF" target="_blank" rel="noopener">Baixar edital e anexos</a><a class="btn linha" href="https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715025965.pdf" target="_blank" rel="noopener">Baixar matrícula do imóvel</a><a class="btn discreto" href="https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715025965" target="_blank" rel="noopener">Ver anúncio original no site da Caixa</a>
+      <a class="btn zap" href="https://wa.me/554199281117?text=Ol%C3%A1%21%20Tenho%20interesse%20neste%20im%C3%B3vel%20de%20leil%C3%A3o%20da%20Caixa%3A%0A%0AApartamento%20em%20Campo%20De%20Santana%2C%20Curitiba%0AC%C3%B3digo%20do%20im%C3%B3vel%3A%208787715025965%0AValor%20m%C3%ADnimo%3A%20R%24%20106.667%2C03%20%2840%2C8%25%20de%20desconto%29%0Ahttps%3A//filipinascimento7.github.io/vitrine-leiloes-caixa/imovel/8787715025965.html%0A%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg> TENHO INTERESSE</a><a class="btn linha" href="https://venda-imoveis.caixa.gov.br/editais/EA00120326CPVERE.PDF" target="_blank" rel="noopener">Baixar edital e anexos</a><a class="btn linha" href="https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715025965.pdf" target="_blank" rel="noopener">Baixar matrícula do imóvel</a>
       <p class="nota">Chame no WhatsApp e a Auxiliadora Predial Hugo Lange acompanha você
       em todo o processo do leilão. Leia o edital e a matrícula antes de ofertar — eles
       trazem as condições de ocupação, dívidas e regras de pagamento do imóvel.</p>
@@ -126,20 +143,51 @@ footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-t
   </div>
 </main>
 
-<div id="lupa" onclick="this.style.display='none'"><img id="lupa-img" alt=""></div>
+<div id="lupa" onclick="if(event.target===this) fecharFoto()">
+  <span class="lupa-conta" id="lupa-conta"></span>
+  <button class="lupa-btn lupa-fechar" onclick="fecharFoto()">&times; Voltar ao anúncio</button>
+  <button class="lupa-btn lupa-seta esq" id="lupa-ant" onclick="passarFoto(-1)">&#10094;</button>
+  <img id="lupa-img" alt="Foto do imóvel">
+  <button class="lupa-btn lupa-seta dir" id="lupa-prox" onclick="passarFoto(1)">&#10095;</button>
+</div>
 
 <footer>
-  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 13/07/2026 às 13:19.<br>
+  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 13/07/2026 às 13:35.<br>
   Vitrine informativa — confira sempre o site oficial antes de qualquer proposta.
 </footer>
 
 <script>
-function ampliar(src){
-  document.getElementById('lupa-img').src = src;
-  document.getElementById('lupa').style.display = 'flex';
+const FOTOS = ["https://venda-imoveis.caixa.gov.br/fotos/F878771502596521.jpg"];
+let atual = 0;
+
+function abrirFoto(i){
+  atual = i;
+  mostrarFoto();
+  document.getElementById('lupa').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function fecharFoto(){
+  document.getElementById('lupa').classList.remove('on');
+  document.body.style.overflow = '';
+}
+function passarFoto(passo){
+  const novo = atual + passo;
+  if (novo < 0 || novo >= FOTOS.length) return;
+  atual = novo;
+  mostrarFoto();
+}
+function mostrarFoto(){
+  document.getElementById('lupa-img').src = FOTOS[atual];
+  document.getElementById('lupa-conta').textContent =
+    (atual + 1) + ' de ' + FOTOS.length;
+  document.getElementById('lupa-ant').disabled  = (atual === 0);
+  document.getElementById('lupa-prox').disabled = (atual === FOTOS.length - 1);
 }
 document.addEventListener('keydown', function(e){
-  if (e.key === 'Escape') document.getElementById('lupa').style.display = 'none';
+  if (!document.getElementById('lupa').classList.contains('on')) return;
+  if (e.key === 'Escape') fecharFoto();
+  if (e.key === 'ArrowLeft') passarFoto(-1);
+  if (e.key === 'ArrowRight') passarFoto(1);
 });
 </script>
 </body>
