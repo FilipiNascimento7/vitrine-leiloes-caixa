@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Casa em Boa Vista — Curitiba | Imóvel 1444407507011 · Leilão Caixa</title>
 <style>
-:root{--azul:#0B4F9E;--azul-esc:#083A75;--laranja:#F39200;--verde:#1B8A4B;--zap:#25D366;
+:root{--azul:#0B4F9E;--azul-esc:#083A75;--laranja:#F39200;--verde:#1B8A4B;--zap:#128C4A;
  --tinta:#16202B;--cinza:#6B7785;--linha:#E3E8EE;--fundo:#F5F7FA;
  --sombra:0 1px 3px rgba(16,32,48,.08),0 8px 24px rgba(16,32,48,.06);}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -60,9 +60,10 @@ dd{font-weight:600;word-break:break-word}
 
 .btn{display:block;text-align:center;text-decoration:none;font-size:14px;font-weight:700;
  padding:12px;border-radius:9px;margin-bottom:9px}
-.btn.zap{background:var(--zap);color:#fff;font-size:15px;letter-spacing:.4px;padding:14px;
- box-shadow:0 4px 14px rgba(37,211,102,.32);display:flex;align-items:center;justify-content:center;gap:9px}
-.btn.zap:hover{background:#1FB855}
+.btn.zap{background:var(--zap);color:#fff;font-size:16px;letter-spacing:.4px;padding:15px;min-height:52px;
+ box-shadow:0 4px 14px rgba(18,140,74,.28);display:flex;align-items:center;justify-content:center;gap:9px}
+.btn.zap:hover{background:#0E7A40}
+.btn:focus-visible,a:focus-visible{outline:3px solid rgba(11,79,158,.5);outline-offset:2px}
 .btn.zap svg{width:19px;height:19px;fill:#fff;flex:none}
 .btn.linha{border:1.5px solid var(--linha);color:var(--tinta);background:#fff}
 .btn.linha:hover{border-color:var(--azul);color:var(--azul)}
@@ -91,7 +92,22 @@ dd{font-weight:600;word-break:break-word}
  .lupa-seta.esq{left:4px} .lupa-seta.dir{right:4px}
 }
 footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-top:1px solid var(--linha)}
-@media(max-width:900px){main{grid-template-columns:1fr}}
+@media(max-width:900px){main{grid-template-columns:1fr;padding:16px 14px 50px;gap:0}}
+@media(max-width:760px){
+ header{padding:14px 14px 12px}
+ header h1{font-size:19px}
+ header .end{font-size:12.5px}
+ .tag{font-size:10.5px;padding:3px 8px}
+ .card{padding:16px 15px;margin-bottom:14px}
+ .preco b{font-size:25px}
+ .precos{gap:16px}
+ .eco{margin-left:0;text-align:left;width:100%}
+ dl{grid-template-columns:1fr;gap:2px 0;font-size:13.5px}
+ dt{margin-top:8px;font-size:12px}
+ .galeria{grid-template-columns:1fr 1fr}
+ .btn{min-height:48px;display:flex;align-items:center;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
@@ -152,7 +168,7 @@ footer{text-align:center;padding:26px;color:var(--cinza);font-size:12px;border-t
 </div>
 
 <footer>
-  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 13/07/2026 às 14:07.<br>
+  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 13/07/2026 às 15:03.<br>
   Vitrine informativa — confira sempre o site oficial antes de qualquer proposta.
 </footer>
 
