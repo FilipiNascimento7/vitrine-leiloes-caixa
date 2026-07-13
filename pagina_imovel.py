@@ -8,7 +8,7 @@ import os
 import urllib.parse
 
 # WhatsApp da Auxiliadora Predial Hugo Lange (formato internacional, só dígitos)
-WHATSAPP = "554199281117"
+WHATSAPP = "554199281177"
 SITE = "https://filipinascimento7.github.io/vitrine-leiloes-caixa"
 
 _PATH_ZAP = (
