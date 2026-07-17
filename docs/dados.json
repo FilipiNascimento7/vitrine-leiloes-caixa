@@ -1,9 +1,9 @@
 {
  "resumo": {
-  "atualizado_em": "16/07/2026 às 08:47",
-  "atualizado_iso": "2026-07-16T08:47:30.216519-03:00",
-  "total": 179,
-  "total_pr": 742,
+  "atualizado_em": "17/07/2026 às 08:28",
+  "atualizado_iso": "2026-07-17T08:28:05.728208-03:00",
+  "total": 177,
+  "total_pr": 735,
   "municipios": [
    "Almirante Tamandaré",
    "Araucária",
@@ -21,8 +21,8 @@
    "Venda Direta Online",
    "Venda Online"
   ],
-  "valor_total": 30191245.19,
-  "desconto_medio": 40.1
+  "valor_total": 29826018.68,
+  "desconto_medio": 40.2
  },
  "imoveis": [
   {
@@ -385,7 +385,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Apartamento, 45.91 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702551558",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770255155821.jpg",
    "pagina": "imovel/8787702551558.html",
@@ -716,29 +716,6 @@
    "n_fotos": 1
   },
   {
-   "numero": "8787702413406",
-   "cidade": "Campo Largo",
-   "bairro": "Jardim Itaqui",
-   "endereco": "RUA MARIA JOAQUINA VAZ, N. 721, Apto 206, BL 29 VG 1081",
-   "preco": 100741.08,
-   "avaliacao": 170000.0,
-   "desconto": 40.75,
-   "economia": 69258.92,
-   "tipo": "Apartamento",
-   "area": 40.0,
-   "quartos": 2,
-   "aceita_financiamento": false,
-   "aceita_fgts": false,
-   "descricao": "Apartamento, 45.92 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Direta Online",
-   "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702413406",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770241340621.jpg",
-   "pagina": "imovel/8787702413406.html",
-   "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702413406.pdf",
-   "n_fotos": 1
-  },
-  {
    "numero": "8787702492527",
    "cidade": "Campo Largo",
    "bairro": "Jardim Itaqui",
@@ -753,7 +730,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Apartamento, 52.00 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787702492527",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770249252721.jpg",
    "pagina": "imovel/8787702492527.html",
@@ -1075,7 +1052,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704480631",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770448063121.jpg",
    "pagina": "imovel/8787704480631.html",
@@ -1282,7 +1259,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705273168",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770527316821.jpg",
    "pagina": "imovel/8787705273168.html",
@@ -1512,7 +1489,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Apartamento, 45.87 de área total, 40.00 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787710659753",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771065975321.jpg",
    "pagina": "imovel/8787710659753.html",
@@ -2340,7 +2317,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Apartamento, 46.17 de área total, 40.31 de área privativa, 0.00 de área do terreno,  2 qto(s), WC, 1 sala(s), cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787704512177",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770451217721.jpg",
    "pagina": "imovel/8787704512177.html",
@@ -2943,7 +2920,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770318889921.jpg",
    "pagina": "imovel/8787703188899.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703188899.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -2966,7 +2943,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770320296421.jpg",
    "pagina": "imovel/8787703202964.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703202964.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -2989,7 +2966,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770967656921.jpg",
    "pagina": "imovel/8787709676569.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787709676569.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3011,8 +2988,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787700995319",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770099531921.jpg",
    "pagina": "imovel/8787700995319.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00160326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787700995319.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3035,7 +3012,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771040721521.jpg",
    "pagina": "imovel/8787710407215.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787710407215.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3058,7 +3035,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440479849821.jpg",
    "pagina": "imovel/8444404798498.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444404798498.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3081,7 +3058,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844440618985521.jpg",
    "pagina": "imovel/8444406189855.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444406189855.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3103,8 +3080,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787705100042",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770510004221.jpg",
    "pagina": "imovel/8787705100042.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705100042.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3126,8 +3103,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787712957700",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771295770021.jpg",
    "pagina": "imovel/8787712957700.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787712957700.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3149,8 +3126,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787715863944",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771586394421.jpg",
    "pagina": "imovel/8787715863944.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00140326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787715863944.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3172,8 +3149,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787717236300",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878771723630021.jpg",
    "pagina": "imovel/8787717236300.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00220326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787717236300.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3195,8 +3172,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8444422964744",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F844442296474421.jpg",
    "pagina": "imovel/8444422964744.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8444422964744.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3218,8 +3195,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8787703103958",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770310395821.jpg",
    "pagina": "imovel/8787703103958.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00150326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787703103958.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3927,7 +3904,7 @@
    "aceita_financiamento": false,
    "aceita_fgts": false,
    "descricao": "Casa, 0.00 de área total, 547.75 de área privativa, 1468.00 de área do terreno,  5 qto(s), varanda, a.serv, WC, WC Emp, 2 sala(s), 1 lavabo(s), cozinha, Terraco.",
-   "modalidade": "Venda Online",
+   "modalidade": "Venda Direta Online",
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=10284141",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F000001028414121.jpg",
    "pagina": "imovel/10284141.html",
@@ -3954,29 +3931,6 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444407173466",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144440717346621.jpg",
    "pagina": "imovel/1444407173466.html",
-   "edital": "",
-   "matricula": "",
-   "n_fotos": 1
-  },
-  {
-   "numero": "1065020080212",
-   "cidade": "Curitiba",
-   "bairro": "Juveve",
-   "endereco": "RUA MARECHAL HERMES, N. 946, Apto 506, BL B",
-   "preco": 264485.43,
-   "avaliacao": 415000.0,
-   "desconto": 36.27,
-   "economia": 150514.57,
-   "tipo": "Apartamento",
-   "area": 87.59,
-   "quartos": 3,
-   "aceita_financiamento": false,
-   "aceita_fgts": false,
-   "descricao": "Apartamento, 98.25 de área total, 87.59 de área privativa, 0.00 de área do terreno,  3 qto(s), a.serv, WC, WC Emp, 1 sala(s), DCE, cozinha, 1 vaga(s) de garagem.",
-   "modalidade": "Licitação Aberta",
-   "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1065020080212",
-   "foto": "https://venda-imoveis.caixa.gov.br/fotos/F106502008021221.jpg",
-   "pagina": "imovel/1065020080212.html",
    "edital": "",
    "matricula": "",
    "n_fotos": 1
