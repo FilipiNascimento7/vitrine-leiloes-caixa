@@ -1,7 +1,7 @@
 {
  "resumo": {
-  "atualizado_em": "21/07/2026 às 12:26",
-  "atualizado_iso": "2026-07-21T12:26:31.409057-03:00",
+  "atualizado_em": "21/07/2026 às 14:32",
+  "atualizado_iso": "2026-07-21T14:32:57.127791-03:00",
   "total": 156,
   "total_pr": 696,
   "municipios": [
@@ -91,7 +91,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770542025021.jpg",
    "pagina": "imovel/8787705420250.html",
    "edital": "",
-   "matricula": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787705420250.pdf",
    "n_fotos": 1
   },
   {
@@ -298,7 +298,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770255155821.jpg",
    "pagina": "imovel/8787702551558.html",
    "edital": "",
-   "matricula": "",
+   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787702551558.pdf",
    "n_fotos": 1
   },
   {
@@ -3264,8 +3264,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444417159547",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441715954721.jpg",
    "pagina": "imovel/1444417159547.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444417159547.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3287,8 +3287,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1787700557135",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F178770055713521.jpg",
    "pagina": "imovel/1787700557135.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00200326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1787700557135.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3310,8 +3310,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555518325604",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551832560421.jpg",
    "pagina": "imovel/8555518325604.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00190326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555518325604.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3334,7 +3334,7 @@
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F878770195507821.jpg",
    "pagina": "imovel/8787701955078.html",
    "edital": "",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787701955078.pdf",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3356,8 +3356,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444414235560",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441423556021.jpg",
    "pagina": "imovel/1444414235560.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00170326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444414235560.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3379,8 +3379,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=8555518647563",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F855551864756321.jpg",
    "pagina": "imovel/8555518647563.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00190326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8555518647563.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
@@ -3402,8 +3402,8 @@
    "link": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnimovel=1444418577210",
    "foto": "https://venda-imoveis.caixa.gov.br/fotos/F144441857721021.jpg",
    "pagina": "imovel/1444418577210.html",
-   "edital": "https://venda-imoveis.caixa.gov.br/editais/EA00220326CPVERE.PDF",
-   "matricula": "https://venda-imoveis.caixa.gov.br/editais/matricula/PR/1444418577210.pdf",
+   "edital": "",
+   "matricula": "",
    "n_fotos": 1
   },
   {
