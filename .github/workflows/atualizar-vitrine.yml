@@ -1,5 +1,9 @@
 name: Atualizar vitrine de imóveis Caixa
 
+# Coleta os imóveis da Caixa e comita a pasta docs/.
+# A publicação é feita pelo Cloudflare Pages, que observa este repositório
+# e publica sozinho a cada commit — não é preciso nenhum passo de deploy aqui.
+
 on:
   schedule:
     # 10:00 UTC = 07:00 de Brasília, todos os dias
@@ -10,11 +14,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: atualizar-vitrine
   cancel-in-progress: true
 
 jobs:
@@ -42,18 +44,3 @@ jobs:
           git add docs/
           git diff --staged --quiet || git commit -m "Atualiza vitrine — $(date -u '+%d/%m/%Y %H:%M UTC')"
           git push
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-  publicar:
-    needs: atualizar
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4

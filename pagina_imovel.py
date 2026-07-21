@@ -383,6 +383,7 @@ document.addEventListener('keydown', function(e){{
   if (e.key === 'ArrowRight') passarFoto(1);
 }});
 </script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "15c91b7caaf7486686702f2ab867a040"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """

@@ -1,30 +1,30 @@
 # Configuração do domínio vitrinecaixa.com.br
 
-Oi Dennis! O site da vitrine de imóveis de leilão já está pronto e no ar num endereço
-provisório. Para ele passar a responder em **vitrinecaixa.com.br**, falta só apontar o
-DNS no registro.br. São 5 registros e leva uns 5 minutos.
+Oi Dennis! Só falta um passo para o site entrar no ar em **vitrinecaixa.com.br**.
+
+É mais simples do que o combinado antes: em vez de cadastrar vários registros, você só
+troca os servidores DNS por dois. Leva uns 3 minutos.
 
 ---
 
-## Passo a passo
+## Passo a passo (registro.br)
 
 **1.** Entrar em [registro.br](https://registro.br) com a conta do domínio.
 
 **2.** Ir em **Meus Domínios** → clicar em `vitrinecaixa.com.br`.
 
-**3.** Abrir **Editar Zona DNS** (em alguns painéis aparece como "DNS" → "Editar zona").
+**3.** Procurar a seção **Servidores DNS** (ou "DNS" → "Alterar servidores DNS").
+Hoje ela está com os servidores automáticos do registro.br
+(`a.auto.dns.br` e `b.auto.dns.br`).
 
-**4.** Se já houver registros nos campos `@` ou `www`, **apagar** os antigos.
+**4.** Trocar para a opção de **DNS externo / usar outros servidores** e informar estes dois:
 
-**5.** Criar estes 5 registros:
+```
+brett.ns.cloudflare.com
+karsyn.ns.cloudflare.com
+```
 
-| Tipo | Nome / Host | Valor / Dados |
-|------|-------------|---------------|
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| CNAME | `www` | `filipinascimento7.github.io.` |
+**5.** Remover os servidores antigos, se ainda aparecerem na lista.
 
 **6.** Salvar.
 
@@ -32,21 +32,16 @@ DNS no registro.br. São 5 registros e leva uns 5 minutos.
 
 ## Observações
 
-- Os **quatro IPs** são os servidores oficiais do GitHub Pages, que é onde o site está
-  hospedado. Precisa cadastrar os quatro — é redundância, se um cair os outros respondem.
-- No campo **Nome/Host**, alguns painéis pedem `@` e outros pedem deixar **em branco** —
-  os dois significam "o domínio raiz". Se o registro.br não aceitar `@`, deixe vazio.
-- No CNAME do `www`, se o painel exigir, mantenha o **ponto final** depois de `.io`
-  (`filipinascimento7.github.io.`).
-- A propagação costuma levar cerca de 1 hora, mas pode ir até 24h.
+- Só esses dois. Não precisa de mais nenhum registro — o resto já está configurado do
+  nosso lado.
+- Os registros de proteção de e-mail que já existem no domínio (SPF, DMARC e o MX nulo)
+  **foram preservados**, então nada muda em relação a e-mail.
+- A propagação costuma levar de 30 minutos a algumas horas.
 
-## Depois de propagar
+## Depois
 
-Me avisa que eu concluo a configuração no GitHub (ativar o domínio e o certificado HTTPS).
-Aí o site responde em:
+Você recebe um e-mail do Cloudflare confirmando a ativação. Me avisa que eu finalizo
+(certificado HTTPS e publicação) e te mando o link funcionando.
 
-- **https://vitrinecaixa.com.br** — endereço principal
-- **https://www.vitrinecaixa.com.br** — redireciona para o principal
-
-Hospedagem e certificado SSL são gratuitos (GitHub Pages) — não há custo mensal além da
+Hospedagem, certificado SSL e CDN são gratuitos — o único custo continua sendo a
 anuidade do domínio no registro.br.
