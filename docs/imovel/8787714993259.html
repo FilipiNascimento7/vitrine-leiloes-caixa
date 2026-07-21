@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vitrine Caixa — Auxiliadora Predial Hugo Lange">
 <meta property="og:title" content="Casa em Estados — R$ 155.963,07">
-<meta property="og:description" content="RUA JAGUARIAIVA,N. 2109 CS 67, ESTADOS - CEP: 83830-033, FAZENDA RIO GRANDE - PARANA · Licitação Aberta da Caixa. Veja edital, matrícula e fotos.">
+<meta property="og:description" content="RUA JAGUARIAIVA, N. 2109, CS 67 · Licitação Aberta da Caixa. Veja edital, matrícula e fotos.">
 <meta property="og:url" content="https://vitrinecaixa.com.br/imovel/8787714993259.html">
 <meta property="og:image" content="https://venda-imoveis.caixa.gov.br/fotos/F878771499325921.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -90,7 +90,26 @@ dd{font-weight:600;word-break:break-word}
 .btn.linha:hover{border-color:var(--azul);color:var(--azul)}
 .btn.discreto{background:transparent;color:var(--cinza);font-weight:600;font-size:12.5px;padding:6px;margin-bottom:0}
 .btn.discreto:hover{color:var(--azul)}
+.btn.abrir-form{background:#fff;border:1.5px dashed var(--linha);color:var(--azul);font-weight:600;
+ font-size:13px;margin-top:2px}
+.btn.abrir-form:hover{border-color:var(--azul);border-style:solid}
 .nota{font-size:12px;color:var(--cinza);margin-top:12px;line-height:1.5}
+
+/* formulário de contato */
+.lead-form{display:none;margin-top:12px;flex-direction:column;gap:10px}
+.lead-form.aberto{display:flex}
+.lead-form input[name="website"]{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.lead-form label{font-size:12.5px;font-weight:600;color:var(--cinza);display:flex;flex-direction:column;gap:4px}
+.lead-form label span{font-weight:400;color:#A6B0BC}
+.lead-form input,.lead-form textarea{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--linha);
+ border-radius:9px;outline:none;color:var(--tinta);width:100%;resize:vertical}
+.lead-form input:focus,.lead-form textarea:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(11,79,158,.1)}
+.btn.enviar{background:var(--azul);color:#fff;font-size:14.5px;font-weight:700;padding:13px;min-height:48px;margin-top:2px}
+.btn.enviar:hover{background:var(--azul-esc)}
+.btn.enviar:disabled{opacity:.6;cursor:default}
+.lead-status{font-size:13px;min-height:18px;margin:0}
+.lead-status.ok{color:var(--verde);font-weight:600}
+.lead-status.erro{color:#C0392B}
 
 #lupa{position:fixed;inset:0;background:rgba(10,18,28,.94);display:none;align-items:center;
  justify-content:center;z-index:99;padding:70px 80px}
@@ -154,7 +173,7 @@ footer b{color:var(--tinta)}
     </nav>
     <a class="voltar" href="../index.html">&larr; Voltar para a vitrine</a>
     <h1>Casa em Estados</h1>
-    <div class="end">RUA JAGUARIAIVA,N. 2109 CS 67, ESTADOS - CEP: 83830-033, FAZENDA RIO GRANDE - PARANA</div>
+    <div class="end">RUA JAGUARIAIVA, N. 2109, CS 67</div>
     <div class="tags"><span class="tag off">38,8% de desconto</span><span class="tag">Licitação Aberta</span><span class="tag">Casa</span></div>
   </div>
 </header>
@@ -171,12 +190,12 @@ footer b{color:var(--tinta)}
 
     <div class="card">
       <h2>Ficha do imóvel</h2>
-      <dl><dt>Tipo de imóvel</dt><dd>Casa</dd><dt>Número do imóvel</dt><dd>878771499325-9</dd><dt>Matrícula(s)</dt><dd>73437</dd><dt>Comarca</dt><dd>FAZENDA RIO GRANDE-PR</dd><dt>Ofício</dt><dd>01</dd><dt>Inscrição imobiliária</dt><dd>0350070542067</dd><dt>Averbação dos leilões negativos</dt><dd>Em tratamento</dd><dt>Edital</dt><dd>0022/0326 - CPVE/RE</dd><dt>Número do item</dt><dd>214</dd><dt>Leiloeiro(a)</dt><dd>FABIO MARLON MACHADO</dd><dt>Data da disputa</dt><dd>Data da Licitação Aberta - 13/08/2026 - 10h00</dd><dt>Quartos</dt><dd>2</dd><dt>Área total</dt><dd>42,00 m²</dd><dt>Área privativa</dt><dd>42,00 m²</dd><dt>Área do terreno</dt><dd>78,00 m²</dd><dt>Cidade</dt><dd>Fazenda Rio Grande</dd><dt>Bairro</dt><dd>Estados</dd></dl>
+      <dl><dt>Cidade</dt><dd>Fazenda Rio Grande</dd><dt>Bairro</dt><dd>Estados</dd></dl>
     </div>
 
     <div class="card blocos">
       <h2>Informações da Caixa</h2>
-      <h3>Descrição</h3><p>2 Quartos, Área de Serviço, Wc, Sala, Cozinha. .</p><h3>Formas de pagamento aceitas</h3><ul><li>Recursos próprios.</li><li>Permite utilização de FGTS. Consulte condições e enquadramento.</li></ul><h3>Regras para pagamento das despesas</h3><ul><li>Condomínio: Sob responsabilidade do comprador, até o limite de 10% em relação ao valor de avaliação do imóvel. A CAIXA realizará o pagamento apenas do valor que exceder o limite de 10% do valor de avaliação.</li><li>Tributos: Sob responsabilidade do comprador, quando o débito for inferior a 10% do valor de avaliação. A CAIXA paga integralmente quando o débito for superior a 10% do valor de avaliação.</li></ul>
+      <h3>Descrição</h3><p>Casa, 42.00 de área total, 42.00 de área privativa, 78.00 de área do terreno,  2 qto(s), a.serv, WC, 1 sala(s), cozinha.</p>
     </div>
   </div>
 
@@ -189,10 +208,39 @@ footer b{color:var(--tinta)}
 
     <div class="card">
       <h2>Fale com a gente</h2>
-      <a class="btn zap" href="https://wa.me/554199281177?text=Ol%C3%A1%21%20Tenho%20interesse%20neste%20im%C3%B3vel%20de%20leil%C3%A3o%20da%20Caixa%3A%0A%0ACasa%20em%20Estados%2C%20Fazenda%20Rio%20Grande%0AC%C3%B3digo%20do%20im%C3%B3vel%3A%208787714993259%0AValor%20m%C3%ADnimo%3A%20R%24%20155.963%2C07%20%2838%2C8%25%20de%20desconto%29%0Ahttps%3A//vitrinecaixa.com.br/imovel/8787714993259.html%0A%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg> TENHO INTERESSE</a><a class="btn linha" href="https://venda-imoveis.caixa.gov.br/editais/EA00220326CPVERE.PDF" target="_blank" rel="noopener">Baixar edital e anexos</a><a class="btn linha" href="https://venda-imoveis.caixa.gov.br/editais/matricula/PR/8787714993259.pdf" target="_blank" rel="noopener">Baixar matrícula do imóvel</a>
-      <p class="nota">Chame no WhatsApp e a Auxiliadora Predial Hugo Lange acompanha você
-      em todo o processo do leilão. Leia o edital e a matrícula antes de ofertar — eles
-      trazem as condições de ocupação, dívidas e regras de pagamento do imóvel.</p>
+      <a class="btn zap" href="https://wa.me/554199281177?text=Ol%C3%A1%21%20Tenho%20interesse%20neste%20im%C3%B3vel%20de%20leil%C3%A3o%20da%20Caixa%3A%0A%0ACasa%20em%20Estados%2C%20Fazenda%20Rio%20Grande%0AC%C3%B3digo%20do%20im%C3%B3vel%3A%208787714993259%0AValor%20m%C3%ADnimo%3A%20R%24%20155.963%2C07%20%2838%2C8%25%20de%20desconto%29%0Ahttps%3A//vitrinecaixa.com.br/imovel/8787714993259.html%0A%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg> TENHO INTERESSE</a>
+
+      <button class="btn abrir-form" id="btn-form" onclick="abrirForm()">
+        Prefere que a gente te chame? Deixe seu contato
+      </button>
+
+      <form class="lead-form" id="lead-form" onsubmit="enviarLead(event)">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="imovel_numero" value="8787714993259">
+        <input type="hidden" name="imovel_titulo" value="Casa em Estados">
+        <input type="hidden" name="imovel_cidade" value="Fazenda Rio Grande">
+        <input type="hidden" name="imovel_preco" value="R$ 155.963,07">
+        <input type="hidden" name="imovel_url" value="https://vitrinecaixa.com.br/imovel/8787714993259.html">
+        <input type="hidden" name="origem" value="ficha-imovel">
+        <label>Seu nome
+          <input type="text" name="nome" required autocomplete="name" placeholder="Como podemos te chamar">
+        </label>
+        <label>WhatsApp / telefone
+          <input type="tel" name="telefone" required autocomplete="tel" placeholder="(41) 99999-9999" inputmode="tel">
+        </label>
+        <label>E-mail <span>(opcional)</span>
+          <input type="email" name="email" autocomplete="email" placeholder="voce@email.com">
+        </label>
+        <label>Mensagem <span>(opcional)</span>
+          <textarea name="mensagem" rows="2" placeholder="Alguma dúvida sobre este imóvel?"></textarea>
+        </label>
+        <button type="submit" class="btn enviar" id="lead-enviar">Quero que me chamem</button>
+        <p class="lead-status" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="nota">Prefere na hora? Chame no WhatsApp. De qualquer forma, a Auxiliadora Predial
+      Hugo Lange acompanha você em todo o processo. Leia o edital e a matrícula antes de ofertar —
+      eles trazem as condições de ocupação, dívidas e regras de pagamento do imóvel.</p>
     </div>
   </div>
 </main>
@@ -208,7 +256,7 @@ footer b{color:var(--tinta)}
 <footer>
   <img class="rodape-logo" src="../img/logo-auxiliadora.png" alt="Auxiliadora Predial — Agência Hugo Lange">
   <b>Auxiliadora Predial — Agência Hugo Lange</b> · Curitiba/PR<br>
-  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 21/07/2026 às 14:32.<br>
+  Dados do portal de Venda de Imóveis da Caixa Econômica Federal · atualizado em 21/07/2026 às 17:37.<br>
   Não somos a Caixa: as propostas e os lances são feitos no site oficial.
   <a href="../modalidades.html">Entenda as modalidades</a> ·
   <a href="../duvidas.html">Dúvidas frequentes</a>
@@ -247,6 +295,46 @@ document.addEventListener('keydown', function(e){
   if (e.key === 'ArrowLeft') passarFoto(-1);
   if (e.key === 'ArrowRight') passarFoto(1);
 });
+
+function abrirForm(){
+  document.getElementById('lead-form').classList.add('aberto');
+  document.getElementById('btn-form').style.display = 'none';
+  document.querySelector('#lead-form input[name=nome]').focus();
+}
+
+async function enviarLead(ev){
+  ev.preventDefault();
+  const form = ev.target;
+  const status = document.getElementById('lead-status');
+  const botao = document.getElementById('lead-enviar');
+  const dados = Object.fromEntries(new FormData(form).entries());
+
+  botao.disabled = true;
+  status.className = 'lead-status';
+  status.textContent = 'Enviando…';
+
+  try{
+    const r = await fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(dados)
+    });
+    const res = await r.json();
+    if (res.ok){
+      form.classList.remove('aberto');
+      status.className = 'lead-status ok';
+      status.textContent = 'Recebido! Em breve a Auxiliadora Predial entra em contato com você. 👍';
+    } else {
+      status.className = 'lead-status erro';
+      status.textContent = res.erro || 'Não consegui enviar. Tente pelo WhatsApp.';
+      botao.disabled = false;
+    }
+  } catch(e){
+    status.className = 'lead-status erro';
+    status.textContent = 'Sem conexão no momento. Tente pelo WhatsApp acima.';
+    botao.disabled = false;
+  }
+}
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "15c91b7caaf7486686702f2ab867a040"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
