@@ -45,6 +45,45 @@ Esse é o link que você compartilha. A partir daí ele se atualiza sozinho todo
 
 ---
 
+## Domínio próprio — vitrinecaixa.com.br
+
+O arquivo `docs/CNAME` já está no repositório com o domínio. Falta apenas apontar o DNS
+e marcar o domínio no GitHub.
+
+### 1. No registro.br (quem faz: Dennis)
+
+Entrar em [registro.br](https://registro.br) → **Meus Domínios** → `vitrinecaixa.com.br`
+→ **Editar Zona DNS** (ou "DNS / Editar zona").
+
+Criar **exatamente estes 5 registros**:
+
+| Tipo | Nome / Host | Valor / Dados |
+|---|---|---|
+| A | `@` (ou deixar em branco) | `185.199.108.153` |
+| A | `@` (ou deixar em branco) | `185.199.109.153` |
+| A | `@` (ou deixar em branco) | `185.199.110.153` |
+| A | `@` (ou deixar em branco) | `185.199.111.153` |
+| CNAME | `www` | `filipinascimento7.github.io.` |
+
+> Os quatro IPs são os servidores oficiais do GitHub Pages — precisa dos quatro (redundância).
+> No CNAME, manter o **ponto final** depois de `.io` se o painel exigir.
+> Se já existirem registros A ou CNAME antigos no `@` ou no `www`, **apagar** antes.
+
+A propagação leva de alguns minutos até 24h (normalmente ~1h).
+
+### 2. No GitHub (depois que o DNS propagar)
+
+**Settings → Pages → Custom domain** → digitar `vitrinecaixa.com.br` → **Save**.
+Aguardar o certificado e marcar **Enforce HTTPS**.
+
+### 3. Conferir
+
+- `https://vitrinecaixa.com.br` abre a vitrine
+- `https://www.vitrinecaixa.com.br` redireciona para o endereço sem www
+- O cadeado de HTTPS aparece no navegador
+
+---
+
 ## Rodar na sua máquina (opcional)
 
 Precisa de [Python](https://python.org/downloads) instalado (marque **"Add Python to PATH"** na instalação).

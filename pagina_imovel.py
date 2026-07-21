@@ -9,7 +9,7 @@ import urllib.parse
 
 # WhatsApp da Auxiliadora Predial Hugo Lange (formato internacional, só dígitos)
 WHATSAPP = "554199281177"
-SITE = "https://filipinascimento7.github.io/vitrine-leiloes-caixa"
+SITE = "https://vitrinecaixa.com.br"
 
 _PATH_ZAP = (
     "M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38"
@@ -261,6 +261,17 @@ def gerar(im: dict, atualizado: str) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{_e(titulo)} — {_e(im['cidade'])} | Imóvel {_e(im['numero'])} · Leilão Caixa</title>
+<meta name="description" content="{_e(titulo)} em {_e(im['cidade'])} por {_brl(im.get('preco'))} — imóvel {_e(im['modalidade'])} da Caixa com edital, matrícula e fotos.">
+<link rel="canonical" href="{SITE}/{im.get('pagina','')}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vitrine Caixa — Auxiliadora Predial Hugo Lange">
+<meta property="og:title" content="{_e(titulo)} — {_brl(im.get('preco'))}">
+<meta property="og:description" content="{_e(endereco)} · {_e(im['modalidade'])} da Caixa. Veja edital, matrícula e fotos.">
+<meta property="og:url" content="{SITE}/{im.get('pagina','')}">
+<meta property="og:image" content="{_e(fotos[0]) if fotos else SITE + '/img/compartilhar.png'}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B4F9E">
+<link rel="icon" href="../img/favicon.png">
 <style>{CSS}</style>
 </head>
 <body>
