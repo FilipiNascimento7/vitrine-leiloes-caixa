@@ -104,7 +104,26 @@ dd{font-weight:600;word-break:break-word}
 .btn.linha:hover{border-color:var(--azul);color:var(--azul)}
 .btn.discreto{background:transparent;color:var(--cinza);font-weight:600;font-size:12.5px;padding:6px;margin-bottom:0}
 .btn.discreto:hover{color:var(--azul)}
+.btn.abrir-form{background:#fff;border:1.5px dashed var(--linha);color:var(--azul);font-weight:600;
+ font-size:13px;margin-top:2px}
+.btn.abrir-form:hover{border-color:var(--azul);border-style:solid}
 .nota{font-size:12px;color:var(--cinza);margin-top:12px;line-height:1.5}
+
+/* formulário de contato */
+.lead-form{display:none;margin-top:12px;flex-direction:column;gap:10px}
+.lead-form.aberto{display:flex}
+.lead-form input[name="website"]{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.lead-form label{font-size:12.5px;font-weight:600;color:var(--cinza);display:flex;flex-direction:column;gap:4px}
+.lead-form label span{font-weight:400;color:#A6B0BC}
+.lead-form input,.lead-form textarea{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--linha);
+ border-radius:9px;outline:none;color:var(--tinta);width:100%;resize:vertical}
+.lead-form input:focus,.lead-form textarea:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(11,79,158,.1)}
+.btn.enviar{background:var(--azul);color:#fff;font-size:14.5px;font-weight:700;padding:13px;min-height:48px;margin-top:2px}
+.btn.enviar:hover{background:var(--azul-esc)}
+.btn.enviar:disabled{opacity:.6;cursor:default}
+.lead-status{font-size:13px;min-height:18px;margin:0}
+.lead-status.ok{color:var(--verde);font-weight:600}
+.lead-status.erro{color:#C0392B}
 
 #lupa{position:fixed;inset:0;background:rgba(10,18,28,.94);display:none;align-items:center;
  justify-content:center;z-index:99;padding:70px 80px}
@@ -325,9 +344,38 @@ def gerar(im: dict, atualizado: str) -> str:
     <div class="card">
       <h2>Fale com a gente</h2>
       {''.join(botoes)}
-      <p class="nota">Chame no WhatsApp e a Auxiliadora Predial Hugo Lange acompanha você
-      em todo o processo do leilão. Leia o edital e a matrícula antes de ofertar — eles
-      trazem as condições de ocupação, dívidas e regras de pagamento do imóvel.</p>
+
+      <button class="btn abrir-form" id="btn-form" onclick="abrirForm()">
+        Prefere que a gente te chame? Deixe seu contato
+      </button>
+
+      <form class="lead-form" id="lead-form" onsubmit="enviarLead(event)">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="imovel_numero" value="{_e(im['numero'])}">
+        <input type="hidden" name="imovel_titulo" value="{_e(titulo)}">
+        <input type="hidden" name="imovel_cidade" value="{_e(im['cidade'])}">
+        <input type="hidden" name="imovel_preco" value="{_e(_brl(im.get('preco')))}">
+        <input type="hidden" name="imovel_url" value="{SITE}/{im.get('pagina','')}">
+        <input type="hidden" name="origem" value="ficha-imovel">
+        <label>Seu nome
+          <input type="text" name="nome" required autocomplete="name" placeholder="Como podemos te chamar">
+        </label>
+        <label>WhatsApp / telefone
+          <input type="tel" name="telefone" required autocomplete="tel" placeholder="(41) 99999-9999" inputmode="tel">
+        </label>
+        <label>E-mail <span>(opcional)</span>
+          <input type="email" name="email" autocomplete="email" placeholder="voce@email.com">
+        </label>
+        <label>Mensagem <span>(opcional)</span>
+          <textarea name="mensagem" rows="2" placeholder="Alguma dúvida sobre este imóvel?"></textarea>
+        </label>
+        <button type="submit" class="btn enviar" id="lead-enviar">Quero que me chamem</button>
+        <p class="lead-status" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="nota">Prefere na hora? Chame no WhatsApp. De qualquer forma, a Auxiliadora Predial
+      Hugo Lange acompanha você em todo o processo. Leia o edital e a matrícula antes de ofertar —
+      eles trazem as condições de ocupação, dívidas e regras de pagamento do imóvel.</p>
     </div>
   </div>
 </main>
@@ -382,6 +430,46 @@ document.addEventListener('keydown', function(e){{
   if (e.key === 'ArrowLeft') passarFoto(-1);
   if (e.key === 'ArrowRight') passarFoto(1);
 }});
+
+function abrirForm(){{
+  document.getElementById('lead-form').classList.add('aberto');
+  document.getElementById('btn-form').style.display = 'none';
+  document.querySelector('#lead-form input[name=nome]').focus();
+}}
+
+async function enviarLead(ev){{
+  ev.preventDefault();
+  const form = ev.target;
+  const status = document.getElementById('lead-status');
+  const botao = document.getElementById('lead-enviar');
+  const dados = Object.fromEntries(new FormData(form).entries());
+
+  botao.disabled = true;
+  status.className = 'lead-status';
+  status.textContent = 'Enviando…';
+
+  try{{
+    const r = await fetch('/api/lead', {{
+      method: 'POST',
+      headers: {{ 'Content-Type': 'application/json' }},
+      body: JSON.stringify(dados)
+    }});
+    const res = await r.json();
+    if (res.ok){{
+      form.classList.remove('aberto');
+      status.className = 'lead-status ok';
+      status.textContent = 'Recebido! Em breve a Auxiliadora Predial entra em contato com você. 👍';
+    }} else {{
+      status.className = 'lead-status erro';
+      status.textContent = res.erro || 'Não consegui enviar. Tente pelo WhatsApp.';
+      botao.disabled = false;
+    }}
+  }} catch(e){{
+    status.className = 'lead-status erro';
+    status.textContent = 'Sem conexão no momento. Tente pelo WhatsApp acima.';
+    botao.disabled = false;
+  }}
+}}
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "15c91b7caaf7486686702f2ab867a040"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>

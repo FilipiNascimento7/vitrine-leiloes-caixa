@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Leads — Vitrine Caixa | Auxiliadora Predial Hugo Lange</title>
+<style>
+  :root{--azul:#0B4F9E;--azul-esc:#083A75;--verde:#128C4A;--tinta:#16202B;--cinza:#6B7785;
+    --linha:#E3E8EE;--fundo:#F5F7FA;--sombra:0 1px 3px rgba(16,32,48,.08),0 8px 24px rgba(16,32,48,.06);}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:var(--fundo);
+    color:var(--tinta);line-height:1.5;-webkit-font-smoothing:antialiased}
+  header{background:linear-gradient(135deg,var(--azul),var(--azul-esc));color:#fff;padding:18px 24px}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+  header h1{font-size:20px;font-weight:700}
+  header p{font-size:13px;opacity:.85;margin-top:3px}
+
+  /* login */
+  .login{max-width:380px;margin:80px auto;background:#fff;border-radius:14px;box-shadow:var(--sombra);padding:30px 28px;text-align:center}
+  .login h2{font-size:18px;margin-bottom:6px}
+  .login p{font-size:13.5px;color:var(--cinza);margin-bottom:18px}
+  .login input{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid var(--linha);
+    border-radius:9px;outline:none;margin-bottom:12px}
+  .login input:focus{border-color:var(--azul);box-shadow:0 0 0 3px rgba(11,79,158,.1)}
+  .login button{width:100%;font:inherit;font-size:15px;font-weight:700;color:#fff;background:var(--azul);
+    border:0;border-radius:9px;padding:12px;cursor:pointer}
+  .login button:hover{background:var(--azul-esc)}
+  .erro{color:#C0392B;font-size:13px;margin-top:6px;min-height:18px}
+
+  /* painel */
+  .barra{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:16px 0}
+  .barra input[type=search]{flex:1;min-width:220px;font:inherit;font-size:14px;padding:9px 12px;
+    border:1px solid var(--linha);border-radius:9px;outline:none}
+  .kpi{background:#fff;border:1px solid var(--linha);border-radius:10px;padding:8px 14px;font-size:13px;color:var(--cinza)}
+  .kpi b{color:var(--tinta);font-size:16px;display:block}
+  .btn{font:inherit;font-size:13.5px;font-weight:600;padding:9px 15px;border:1px solid var(--linha);
+    border-radius:9px;background:#fff;color:var(--tinta);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+  .btn:hover{border-color:var(--azul);color:var(--azul)}
+  .btn.sair{margin-left:auto}
+
+  .tabela-wrap{background:#fff;border-radius:12px;box-shadow:var(--sombra);overflow:auto;margin-bottom:40px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
+  th{position:sticky;top:0;background:var(--azul);color:#fff;text-align:left;padding:11px 12px;
+    font-size:11.5px;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+  td{padding:10px 12px;border-bottom:1px solid var(--linha);vertical-align:top}
+  tbody tr:hover{background:#F8FAFC}
+  td .zap{color:var(--verde);font-weight:700;text-decoration:none;white-space:nowrap}
+  td a{color:var(--azul);text-decoration:none}
+  .quando{color:var(--cinza);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .vazio{text-align:center;padding:60px 20px;color:var(--cinza)}
+  .oculto{display:none!important}
+</style>
+</head>
+<body>
+
+<div id="login" class="login">
+  <h2>Painel de leads</h2>
+  <p>Área restrita da Auxiliadora Predial Hugo Lange.</p>
+  <input type="password" id="senha" placeholder="Senha de acesso" autocomplete="current-password">
+  <button onclick="entrar()">Entrar</button>
+  <div class="erro" id="erro-login"></div>
+</div>
+
+<div id="painel" class="oculto">
+  <header>
+    <div class="wrap">
+      <h1>Leads recebidos</h1>
+      <p>Interessados que preencheram o formulário nas fichas de imóvel</p>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="barra">
+      <div class="kpi"><b id="k-total">—</b>leads no total</div>
+      <div class="kpi"><b id="k-hoje">—</b>hoje</div>
+      <input type="search" id="busca" placeholder="Buscar por nome, telefone, cidade, imóvel…" oninput="render()">
+      <button class="btn" onclick="exportar()">Exportar CSV</button>
+      <button class="btn" onclick="carregar()">Atualizar</button>
+      <button class="btn sair" onclick="sair()">Sair</button>
+    </div>
+    <div class="tabela-wrap">
+      <table>
+        <thead><tr>
+          <th>Quando</th><th>Nome</th><th>Contato</th><th>Imóvel</th>
+          <th>Cidade</th><th>Valor</th><th>Mensagem</th>
+        </tr></thead>
+        <tbody id="corpo"></tbody>
+      </table>
+      <div id="vazio" class="vazio oculto">Nenhum lead ainda. Assim que alguém preencher o formulário, aparece aqui.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+let SENHA = '';
+let LEADS = [];
+
+const esc = s => (s==null?'':String(s)).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const soDigitos = t => (t||'').replace(/\D/g,'');
+
+async function entrar(){
+  SENHA = document.getElementById('senha').value;
+  document.getElementById('erro-login').textContent = '';
+  await carregar(true);
+}
+
+async function carregar(doLogin){
+  try{
+    const r = await fetch('/api/leads', { headers: { 'x-admin-key': SENHA } });
+    const d = await r.json();
+    if(!d.ok){
+      const alvo = doLogin ? 'erro-login' : 'erro-login';
+      document.getElementById(alvo).textContent = d.erro || 'Erro ao carregar.';
+      return;
+    }
+    LEADS = d.leads || [];
+    document.getElementById('login').classList.add('oculto');
+    document.getElementById('painel').classList.remove('oculto');
+    try{ sessionStorage.setItem('adm', SENHA); }catch(_){}
+    render();
+  }catch(e){
+    document.getElementById('erro-login').textContent = 'Falha de conexão.';
+  }
+}
+
+function render(){
+  const q = document.getElementById('busca').value.trim().toLowerCase();
+  const hoje = new Date().toLocaleDateString('sv-SE',{timeZone:'America/Sao_Paulo'});
+  let lista = LEADS;
+  if(q) lista = LEADS.filter(l =>
+    `${l.nome} ${l.telefone} ${l.email} ${l.imovel_cidade} ${l.imovel_titulo} ${l.imovel_numero} ${l.mensagem}`
+    .toLowerCase().includes(q));
+
+  document.getElementById('k-total').textContent = LEADS.length;
+  document.getElementById('k-hoje').textContent = LEADS.filter(l => (l.criado_em||'').startsWith(hoje)).length;
+  document.getElementById('vazio').classList.toggle('oculto', lista.length>0);
+
+  document.getElementById('corpo').innerHTML = lista.map(l => {
+    const tel = soDigitos(l.telefone);
+    const zap = tel ? `<a class="zap" href="https://wa.me/55${tel}" target="_blank" rel="noopener">${esc(l.telefone)}</a>` : esc(l.telefone);
+    const mail = l.email ? `<br><a href="mailto:${esc(l.email)}">${esc(l.email)}</a>` : '';
+    const ficha = l.imovel_url ? `<a href="${esc(l.imovel_url)}" target="_blank" rel="noopener">${esc(l.imovel_titulo||l.imovel_numero||'ver')}</a>` : esc(l.imovel_titulo||'—');
+    return `<tr>
+      <td class="quando">${esc((l.criado_em||'').replace('T',' ').slice(0,16))}</td>
+      <td><b>${esc(l.nome)}</b></td>
+      <td>${zap}${mail}</td>
+      <td>${ficha}<br><span style="color:var(--cinza);font-size:12px">${esc(l.imovel_numero||'')}</span></td>
+      <td>${esc(l.imovel_cidade||'—')}</td>
+      <td>${esc(l.imovel_preco||'—')}</td>
+      <td>${esc(l.mensagem||'')}</td>
+    </tr>`;
+  }).join('');
+}
+
+function exportar(){
+  const campos = ['criado_em','nome','telefone','email','imovel_numero','imovel_titulo','imovel_cidade','imovel_preco','imovel_url','mensagem'];
+  const cel = v => `"${String(v??'').replace(/"/g,'""')}"`;
+  const csv = [campos.join(';'), ...LEADS.map(l => campos.map(c => cel(l[c])).join(';'))].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['﻿'+csv], {type:'text/csv;charset=utf-8'}));
+  a.download = `leads-vitrinecaixa-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+}
+
+function sair(){
+  SENHA=''; LEADS=[];
+  try{ sessionStorage.removeItem('adm'); }catch(_){}
+  document.getElementById('painel').classList.add('oculto');
+  document.getElementById('login').classList.remove('oculto');
+  document.getElementById('senha').value='';
+}
+
+// mantém logado enquanto a aba está aberta
+document.getElementById('senha').addEventListener('keydown', e => { if(e.key==='Enter') entrar(); });
+(function(){ try{ const s = sessionStorage.getItem('adm'); if(s){ SENHA=s; carregar(); } }catch(_){} })();
+</script>
+</body>
+</html>
